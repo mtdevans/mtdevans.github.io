@@ -1,0 +1,27 @@
+/*  Breadcrumb style with no background image */
+	.crumbs {overflow:auto; width:100%; margin-bottom: 0;} /* to force full height, clear floats */
+/*	li.crumbs ul {margin: 0 2em 0 0; list-style-type: none; } */
+	.crumbs ul{
+/*		margin: 0 0 20px 0;*/
+		padding: 0;
+		list-style-type: none;
+	}
+	.crumbs li { 
+		display:inline;
+		float: left;
+}
+	
+	.crumbs ul li:before { 
+		content: none;
+		}  
+	.crumbs ul li a {		
+			margin: 0 0.5em 0 0.5em;
+			}
+			
+#breadcrumbul {
+  margin: 0 0 0 2.5em;
+  list-style:none;
+}
+#breadcrumbul li ul li {
+  font-size: 80%; 
+}

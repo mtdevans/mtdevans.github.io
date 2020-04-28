@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Virtualizing Your Web Development Environment With VirtualBox | Matt Evans</title>
+<link rel="shortcut icon" href="http://mtdevans.com/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
+<link rel="pingback" href="http://mtdevans.com/xmlrpc.php" />
+<link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<script src="http://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Virtualizing Your Web Development Environment With VirtualBox Comments Feed" href="http://mtdevans.com/2013/04/virtualizing-your-web-development-environment-with-virtualbox/feed/" />
+<link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery.js@ver=1.11.0'></script>
+<script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery-migrate.min.js@ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mtdevans.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Physics Problems and Related Stuff' href='../../../2012/12/physics-problems-and-related-stuff/index.html' />
+<link rel='next' title='Physics Bungee-Rope Cursor Trailer' href='../physics-bungee-rope-cursor-trailer/index.html' />
+
+<link rel='shortlink' href='http://mtdevans.com/?p=398' />
+		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
+		
+<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="http://105749333960895048875/" />
+<meta name="keywords" content="virtualize,web,development,virtualbox,environment,mtdevans,matt,evans,tutorial,virtualization,web development" />
+
+<link rel="canonical" href="index.html" />
+<!-- /all in one seo pack -->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFFFFF; }
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-33092385-2']);
+					_gaq.push(['_trackPageLoadTime']);
+            _gaq.push(['_setCustomVar',2,'tags','tutorial virtualbox virtualization web-development',3],['_setCustomVar',3,'category','web',3],['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			</head>
+
+<body class="single single-post postid-398 single-format-standard custom-background single-author singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+	    <div id="hdfltcont">
+			  <hgroup>
+				  <h1 id="site-title"><span><a href="../../../index.html" title="Matt Evans" rel="home">Matt Evans</a></span></h1>
+				  <h2 id="site-description">(( Physics, Security, Web ))</h2>
+			  </hgroup>
+			  <nav id="access" role="navigation">
+				  <h3 class="assistive-text">Main menu</h3>
+				  				  <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+				  <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+				  				  <div class="menu"><ul><li ><a href="../../../index.html">Home</a></li><li class="page_item page-item-106 page_item_has_children"><a href="../../../projects/index.html">Projects</a><ul class='children'><li class="page_item page-item-223 page_item_has_children"><a href="../../../projects/physics-problems/index.html" title="Matt Evans | Solutions to Some Common Physics Problems">Physics Problems</a><ul class='children'><li class="page_item page-item-323"><a href="../../../projects/physics-problems/polymer-bundle-2-d-microcanonical-approach.1.html" title="2-Dimensional Polymer Bundle (Microcanonical) | Matt Evans">2-D Polymer Bundle (Microcanonical Approach)</a></li><li class="page_item page-item-286"><a href="../../../projects/physics-problems/absorption-of-molecules-onto-a-surface.1.html">Adsorption of Molecules onto a Surface</a></li><li class="page_item page-item-226"><a href="../../../projects/physics-problems/deriving-stirlings-formula.1.html" title="Matt Evans | Physics Problems | Deriving Stirling's Formula">Deriving Stirling&#8217;s Formula</a></li><li class="page_item page-item-373"><a href="../../../projects/physics-problems/diatomic-molecule-as-rigid-rotor/index.html">Diatomic Molecule as Rigid Rotor</a></li><li class="page_item page-item-345"><a href="../../../projects/physics-problems/diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency | Matt Evans">Diesel Cycle Efficiency</a></li><li class="page_item page-item-280"><a href="../../../projects/physics-problems/exchange-of-particles-between-subsystems.1.html">Exchange of Particles Between Subsystems</a></li><li class="page_item page-item-500"><a href="../../../projects/physics-problems/fixed-target-vs-collider-experiments-with-discussion/index.html">Fixed Target vs Collider Experiments (with discussion)</a></li><li class="page_item page-item-525"><a href="../../../projects/physics-problems/interactions-of-charged-particles-with-matter/index.html">Interactions of Charged Particles with Matter</a></li><li class="page_item page-item-490"><a href="../../../projects/physics-problems/mandelstam-variables-with-identical-particles/index.html">Mandelstam Variables with Identical Particles</a></li><li class="page_item page-item-288"><a href="../../../projects/physics-problems/maxwell-relations.1.html">Maxwell Relations</a></li><li class="page_item page-item-319"><a href="../../../projects/physics-problems/mixture-of-two-ideal-gases-microcanonical-approach.1.html" title="Mixture of Two Ideal Gases (Microcanonical) | Matt Evans">Mixture of Two Ideal Gases</a></li><li class="page_item page-item-228"><a href="../../../projects/physics-problems/particle-in-a-one-dimensional-box.1.html" title="Matt Evans | Physics Problems | Particle in 1-D Box">Particle in a one-dimensional box</a></li><li class="page_item page-item-230"><a href="../../../projects/physics-problems/random-walk-of-two-drunks.1.html" title="Matt Evans | Physics Problems | Random Walk of Two Drunks">Random Walk of Two Drunks</a></li><li class="page_item page-item-356"><a href="../../../projects/physics-problems/reverse-carnot-cycle-efficiency.1.html" title="Matt Evans | Efficiency of the Reverse Carnot Cycle">Reverse Carnot Cycle Efficiency</a></li><li class="page_item page-item-233"><a href="../../../projects/physics-problems/system-of-n-harmonic-oscillators.1.html" title="Microcanonical System N Harmonic Oscillators | Matt Evans">System of N Harmonic Oscillators</a></li></ul></li><li class="page_item page-item-149"><a href="../../../projects/barcode.1.html" title="Tesco Discount Barcodes, Cracked.">Tesco Discount Barcodes, Cracked</a></li><li class="page_item page-item-122"><a href="../../../projects/zappysearch/index.html" title="ZappySearch, a Firefox Plugin">ZappySearch</a></li></ul></li><li class="page_item page-item-104 page_item_has_children"><a href="../../../about/index.html">About</a><ul class='children'><li class="page_item page-item-384"><a href="../../../about/privacy-policy.1.html">Privacy Policy</a></li></ul></li><li class="page_item page-item-205"><a href="../../../contact/index.html" title="Matt Evans | Contact">Contact</a></li></ul></div>
+			  </nav><!-- #access -->
+			  <br style="clear:both;">
+			</div>
+
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary" class="postprimary">
+			<div id="content" role="main">
+
+				
+					<nav id="nav-single">
+						<h3 class="assistive-text">Post navigation</h3>
+						<span class="nav-previous"><a href="../../../2012/12/physics-problems-and-related-stuff/index.html" rel="prev"><span class="meta-nav">&larr;</span> Previous</a></span>
+						<span class="nav-next"><a href="../physics-bungee-rope-cursor-trailer/index.html" rel="next">Next <span class="meta-nav">&rarr;</span></a></span>
+					</nav><!-- #nav-single -->
+
+					
+<article id="post-398" class="post-398 post type-post status-publish format-standard has-post-thumbnail hentry category-web tag-tutorial tag-virtualbox tag-virtualization tag-web-development">
+	<header class="entry-header">
+		<h1 class="entry-title">Virtualizing Your Web Development Environment With VirtualBox</h1>
+
+				<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="index.html" title="9.08 pm" rel="bookmark"><time class="entry-date" datetime="2013-04-11T21:08:38+00:00" pubdate>11 April  2013</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../../../author/admin/index.html" title="View all posts by Matt" rel="author">Matt</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><img src="../../.././wp-content/uploads/2013/04/virtualbox_logo_lo.jpg" alt="" title="VirtualBox" width="300" height="300" class="alignleft size-full wp-image-399" /> If you&#8217;re a part-time developer or you don&#8217;t use your computer exclusively for web development, it makes sense for you not slowing things down with Apache and MySql every time you boot up.</p>
+<p>Aside from grinning and bearing it, one option to solve this would be to start these services when you need them from the command line. It&#8217;s a fairly simple <code>sudo service apache2 start</code> in most Linux distributions, or the new <code>sudo start apache2</code> way for <a href="http://www.ubuntu.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.ubuntu.com/']);" title="Ubuntu">Ubuntu</a>.</p>
+<p>An alternative, which has its own advantages, is to install your services in a virtual machine and load up the VM when you&#8217;re working.</p>
+<p>Actually, it&#8217;s perfectly possible to use this set-up for more than just single-person local development, and many developers do this.</p>
+<p>One great advantage a virtualized development environment has is that it <span id="more-398"></span> can be made to model almost exactly your production server, by having the exact same packages installed, having to <abbr title="Secure Shell">SSH</abbr> into it and deal with permissions, utilizing it for version control etc. That makes deployment of new features much safer since you already know precisely how and that they will work.</p>
+<p>Another advantage is it keeps your operating system install clean of unnecessary packages you don&#8217;t really want clogging up your system.</p>
+<p>Whatever your reasons for wanting to, here&#8217;s how to virtualize your local web development environment.</p>
+<p>For this tutorial, we&#8217;ll be using VirtualBox, and installing <abbr title="Linux, Apache, MySql, PHP">LAMP</abbr> on Ubuntu Server. This is a common combination, and they&#8217;re all free and open source.<sup><a href="index.html#footnote_0_398" id="identifier_0_398" class="footnote-link footnote-identifier-link" title="If you use Windows server, you might like to look here: http://www.personal.psu.edu/sal21/blogs/stuff/2009/06/create-a-web-application-devel.html." >1</a></sup></p>
+<h2>Install VirtualBox</h2>
+<p>If you&#8217;re on Windows or Mac, you can find the latest VirtualBox installer <a href="https://www.virtualbox.org/wiki/Downloads" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.virtualbox.org/wiki/Downloads']);" title="VirtualBox downloads">here</a>. If you&#8217;re running Linux, you can find binaries <a href="https://www.virtualbox.org/wiki/Linux_Downloads" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.virtualbox.org/wiki/Linux_Downloads']);" title="VirtualBox Linux binaries">here</a>. If you&#8217;re on a Debian-based distro just run <code>sudo apt-get install virtualbox</code> from a terminal.</p>
+<div id="attachment_400" style="width: 160px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-10-224028.gif" ><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-10-224028-150x150.gif" alt="Insert Ubuntu Server Live CD Into CD Drive" title="Insert Ubuntu Server Live CD Into CD Drive" width="150" height="150" class="size-thumbnail wp-image-400" /></a><p class="wp-caption-text">Insert Ubuntu Server Live CD Into CD Drive</p></div>
+<h2 class="clearnone">Create Ubuntu Server VM</h2>
+<p>Once installed, load up VirtualBox and create a new Ubuntu Linux VM. I created a 32-bit Ubuntu Server with 2.5GB RAM since roughly reflects my production server. (Make sure you&#8217;ve enough RAM on your computer when deciding how much to give the VM!) With the new VM, open its settings, and on the <strong>Storage</strong> tab, &#8220;insert&#8221; the <a href="http://www.ubuntu.com/download/server" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.ubuntu.com/download/server']);">Ubuntu Server .ISO</a> image into the VM&#8217;s CD drive. I&#8217;m installing Ubuntu 12.04.</p>
+<div id="attachment_401" style="width: 160px" class="wp-caption alignleft"><a href="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-10-232917.png" ><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-10-232917-150x150.png" alt="Installing OpenSSH and LAMP" title="Installing OpenSSH and LAMP" width="150" height="150" class="size-thumbnail wp-image-401" /></a><p class="wp-caption-text">Be sure to check OpenSSH and LAMP when you reach this screen.</p></div>
+<h2 style="clear:right;">Install Ubuntu Server</h2>
+<p>Once that&#8217;s done, and you&#8217;ve tweaked any other settings you&#8217;d like, accept them and start the VM. The Ubuntu Server install process is quite simple but can take a few minutes. You can find tutorials elsewhere on the Internet if you need help with it, just be sure to check <strong>&#8220;LAMP&#8221;</strong> and <strong>&#8220;OpenSSH&#8221;</strong> when given a list of packages to install (see screenshot to the left).</p>
+<h2>Make it Accessible From the Host<sup><a href="index.html#footnote_1_398" id="identifier_1_398" class="footnote-link footnote-identifier-link" title="ie The one you&rsquo;re on now">2</a></sup> Machine</h2>
+<p>Whilst it&#8217;s installing, we can continue to make a little progress. In order to make your virtual environment accessible from your host machine, VirtualBox has to be configured to forward requests through to the virtual machine:</p>
+<p><small><em>Update: If you need the VM to be accessible from other devices on your network, select &#8220;Bridged Adapter&#8221; as the adapter type on the Network Settings page, and disregard the port forwarding info below. This enables the VM to communicate with your network as if it were a real host, bypassing the host OS&#8217;s network stack (<a href="http://www.virtualbox.org/manual/ch06.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.virtualbox.org/manual/ch06.html']);" title="More on virtual networking">More on virtual networking with VirtualBox</a>).</em></small></p>
+<p>On the <strong>Network</strong> tab of the VM&#8217;s settings, you will find a button labelled &#8220;Port Forwarding&#8221;. Open it up and add the following rules. (Note that if you&#8217;re on Linux, the port numbers you choose have to be above 1024, since ports below that require higher privileges to attach to. See footnote.)<sup><a href="index.html#footnote_2_398" id="identifier_2_398" class="footnote-link footnote-identifier-link" title="If you are bothered by this (I mean, port numbers in the address bar are pretty unsightly), a workaround is to set up a reverse proxy (nginx, squid, or Apache) on the host system to redirect requests to the right port on the VM. Eg in Apache, in httpd.conf:LoadModule proxy_module /usr/lib/apache2/modules/mod_proxy.soProxyRequests OffProxyPreserveHost On&lt;Proxy *&gt;    Order allow,deny    Allow from all&lt;/Proxy&gt;ServerName localhostProxyPass / http://127.0.0.1:8888/ProxyPassReverse / http://127.0.0.1:8888/DocumentRoot /var/www/">3</a></sup></p>
+<pre>
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 8888
+Guest IP: 10.0.2.15
+Guest Port: 80
+</pre>
+<pre>
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 2222
+Guest IP: 10.0.2.15
+Guest Port: 22
+</pre>
+<div id="attachment_402" style="width: 612px" class="wp-caption aligncenter"><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-002736.gif" alt="Setting Up Port Forwarding" title="Setting Up Port Forwarding" width="602" height="325" class="size-full wp-image-402" /><p class="wp-caption-text">Setting up port forwarding. See the article text to see how to determine the Guest IP.</p></div>
+<p>The Guest IP may be different for you. To find it, run the command <code>ifconfig</code> from the virtual machine once Ubuntu Server&#8217;s installed and restarted. If you change any port forwarding rules, a restart of the VM may be required for them to take effect (you can do that quickly with <code>sudo reboot</code>):</p>
+<div id="attachment_403" style="width: 560px" class="wp-caption aligncenter"><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-001425.png" alt="Finding the IP Address of the VM" title="Finding the IP Address of the VM" width="550" height="294" class="size-full wp-image-403" /><p class="wp-caption-text">The IP Address of the VM, the &#8220;Guest IP&#8221;, is the “inet addr”, in my case 10.0.2.15.</p></div>
+<h2>Testing It Out</h2>
+<p>Once all that&#8217;s done, your virtual environment should now be accessible from your host machine.</p>
+<p>In a web browser, navigate to <code>http://127.0.0.1:8888/</code>. If everything&#8217;s good, you should see a message saying &#8220;It works!&#8221; &#8211; the default greeting page of Apache server.</p>
+<div id="attachment_404" style="width: 611px" class="wp-caption aligncenter"><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-003526.gif" alt="It works!" title="It works!" width="601" height="198" class="size-full wp-image-404" /><p class="wp-caption-text">It works! This is the page you should see at <code>http://127.0.0.1:8888/</code>.</p></div>
+<h2>Making it Useful with SSH</h2>
+<p>To set up SSH, so you can use version control software<sup><a href="index.html#footnote_3_398" id="identifier_3_398" class="footnote-link footnote-identifier-link" title="Setting up version control etc. is outside the scope of this tutorial, but here&rsquo;s a good one for Git.">4</a></sup> and access it like a remote server, you obviously require an SSH client. Free clients are available for <a href="http://www.openssh.org/windows.html" >Windows</a> and <a href="http://www.openssh.org/macos.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.openssh.org/macos.html']);">Mac</a>; Debian-derivative users can run <code>sudo apt-get install openssh-client</code>.</p>
+<p>To SSH into the virtual server, Linux/Mac users can run <code>ssh [user]:127.0.0.1 -p 2222</code> where <code>[user]</code> is the username you chose at install and <code>2222</code> is the &#8220;Host Port&#8221; from the Port Forwarding dialogue. Windows users <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-3-going-from-windows-to-linux-using-putty" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-3-going-from-windows-to-linux-using-putty']);" title="Explanation of how to SSH using PuTTY on Windows">can use PuTTY</a> to do the same thing (get PuTTY from the page linked above). You&#8217;re now inside the VM from your host machine&#8217;s command line, just as when SSHing into a remote machine:</p>
+<div id="attachment_405" style="width: 577px" class="wp-caption aligncenter"><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-005221.gif" alt="SSHing Into the Server" title="SSHing Into the Server" width="567" height="345" class="size-full wp-image-405" /><p class="wp-caption-text">SSHing into the virtual server from Ubuntu terminal.</p></div>
+<h3>A Note About Permissions</h3>
+<p>By default, Apache uses <code>/var/www/</code> as the web directory. If you want to edit files in that directory, you&#8217;ll need to change its owner to your user. Eg I would run <code>cd /var/www/ &#038;&#038; sudo chown matt . index.html</code> (note the dot) from inside the VM.</p>
+<h3>Accessing the Filesystem via a GUI</h3>
+<p>Since OpenSSH server comes preinstalled with an <abbr title="Secure File Transfer Protocol">SFTP</abbr> server, you can mount the virtual server as a drive on your filesystem. This makes copying files over much easier, should you need to.</p>
+<div id="attachment_406" style="width: 160px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-005706.gif" ><img src="../../.././wp-content/uploads/2013/04/Screenshot-from-2013-04-11-005706-150x150.gif" alt="Mounting Filesystem from Nautilus" title="Mounting Filesystem from Nautilus" width="150" height="150" class="size-thumbnail wp-image-406" /></a><p class="wp-caption-text">Mounting the virtual environment from Nautilus in Ubuntu. The parameters should be the same for Win SSHFS and Macfusion.</p></div>
+<p>In Windows, you can use <a href="http://code.google.com/p/win-sshfs/downloads/list" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://code.google.com/p/win-sshfs/downloads/list']);">Win SSHFS</a>.</p>
+<p>For Mac, there is <a href="http://macfusionapp.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://macfusionapp.org/']);">Macfusion</a> which can mount the virtual server&#8217;s filesystem in Finder. (Note: I&#8217;ve personally never used this software).</p>
+<p>In Ubuntu, you can mount the VM&#8217;s filesystem from Nautilus, the Ubuntu filesystem browser: select <code>File->Connect to Server</code> and enter the server&#8217;s details. Altenatively, the command <code>gvfs-mount sftp://[user]@127.0.0.1:2222</code> does the same thing.</p>
+<p>If none of these work, you can always connect using <a href="https://filezilla-project.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://filezilla-project.org/']);">FileZilla</a> or other FTP software.</p>
+<h2>Conclusion</h2>
+<p>Virtualizing your web development environment is a great way to streamline and professionalize your development process, and do away with unnecessary boot-up times and a bloated operating system at the same time. This tutorial really just presents the start of getting your environment fully set up and optimized; separating services like Apache and MySql into different VMs is a common next step if you need finer-grained control.</p>
+<p>I&#8217;m interested to hear about your experiences with virtualization. Do you already use a virtual web development environment? What made you make the switch?</p>
+<ol class="footnotes"><li id="footnote_0_398" class="footnote">If you use Windows server, you might like to look here: <a href="http://www.personal.psu.edu/sal21/blogs/stuff/2009/06/create-a-web-application-devel.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.personal.psu.edu/sal21/blogs/stuff/2009/06/create-a-web-application-devel.html']);">http://www.personal.psu.edu/sal21/blogs/stuff/2009/06/create-a-web-application-devel.html</a>. [<a href="index.html#identifier_0_398" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_1_398" class="footnote">ie The one you&#8217;re on now [<a href="index.html#identifier_1_398" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_2_398" class="footnote">If you are bothered by this (I mean, port numbers in the address bar are pretty unsightly), a workaround is to set up a reverse proxy (nginx, squid, or Apache) on the host system to redirect requests to the right port on the VM. Eg in Apache, in httpd.conf:</p>
+<pre class="crayon:false">
+LoadModule proxy_module /usr/lib/apache2/modules/mod_proxy.so
+
+ProxyRequests Off
+ProxyPreserveHost On
+&lt;Proxy *&gt;
+    Order allow,deny
+    Allow from all
+&lt;/Proxy&gt;
+
+ServerName localhost
+ProxyPass / http://127.0.0.1:8888/
+ProxyPassReverse / http://127.0.0.1:8888/
+DocumentRoot /var/www/
+</pre>
+<p> [<a href="index.html#identifier_2_398" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_3_398" class="footnote">Setting up version control etc. is outside the scope of this tutorial, but <a href="http://qugstart.com/blog/ruby-and-rails/create-a-new-git-remote-repository-from-some-local-files-or-local-git-repository/"  title="Git Tutorial">here&#8217;s</a> a good one for Git. [<a href="index.html#identifier_3_398" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="../../../category/web/index.html" title="View all posts in Web" rel="category tag">Web</a> and tagged <a href="../../../tag/tutorial/index.html" rel="tag">Tutorial</a>, <a href="../../../tag/virtualbox/index.html" rel="tag">VirtualBox</a>, <a href="../../../tag/virtualization/index.html" rel="tag">Virtualization</a>, <a href="../../../tag/web-development/index.html" rel="tag">Web Development</a> by <a href="../../../author/admin/index.html">Matt</a>. Bookmark the <a href="index.html" title="Permalink to Virtualizing Your Web Development Environment With VirtualBox" rel="bookmark">permalink</a>.		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-398 -->
+
+					
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://mtdevans.com/2013/04/virtualizing-your-web-development-environment-with-virtualbox/';
+    var disqus_identifier = '398 http://mtdevans.com/?p=398';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'mtdevans';
+    var disqus_title = "Virtualizing Your Web Development Environment With VirtualBox";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=398';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/mtdevans.com\/2013\/04\/virtualizing-your-web-development-environment-with-virtualbox\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" action="../../../index.html">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Me</h3>			<div class="textwidget"><p>Hello and welcome! I'm Matt Evans, a Physics student at the University of Manchester with an unhealthy interest in technology, software, security, and the web.</p>
+<p>I don't hang out here <em>too</em> much at the moment, but <a href="../../../projects/index.html" title="A list of the projects I'm currently involved with">any projects</a> I'm working on are kept up to date - both Physics- and web-related.</p>
+</div>
+		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-17"><a href="../../../category/general/index.html" title="Posts which don&#039;t fit into any other category">General</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../../../category/physics/index.html" title="View all posts filed under Physics">Physics</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../category/security/index.html" title="View all posts filed under Security">Security</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../../../category/technology/index.html" title="My thoughts on and experience in the world of technology.">Technology</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../../../category/web/index.html" title="View all posts filed under Web">Web</a>
+</li>
+		</ul>
+</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='../../../tag/about-me/index.html' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>About Me</a>
+<a href='../../../tag/cakephp/index.html' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>CakePHP</a>
+<a href='../../../tag/javascript/index.html' class='tag-link-27' title='3 topics' style='font-size: 15.636363636364pt;'>JavaScript</a>
+<a href='../../../tag/particle-physics/index.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>particle physics</a>
+<a href='../../../tag/passwords/index.html' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>passwords</a>
+<a href='../../../tag/physics/index.html' class='tag-link-21' title='6 topics' style='font-size: 22pt;'>Physics</a>
+<a href='../../../tag/search/index.html' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>search</a>
+<a href='../../../tag/security-2/index.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>security</a>
+<a href='../../../tag/solved-problems/index.html' class='tag-link-16' title='2 topics' style='font-size: 12.581818181818pt;'>solved problems</a>
+<a href='../../../tag/tutorial/index.html' class='tag-link-24' title='2 topics' style='font-size: 12.581818181818pt;'>Tutorial</a>
+<a href='../../../tag/virtualbox/index.html' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>VirtualBox</a>
+<a href='../../../tag/virtualization/index.html' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>Virtualization</a>
+<a href='../../../tag/web-development/index.html' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Web Development</a>
+<a href='../../../tag/welcome/index.html' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>welcome</a>
+<a href='../../../tag/wordpress/index.html' class='tag-link-8' title='2 topics' style='font-size: 12.581818181818pt;'>Wordpress</a></div>
+</aside>		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+      <div id="copyrightinfo">
+        &copy; Copyright Matt Evans 2014 - <a href="../../../about/privacy-policy.1.html" title="How I protect you and your data.">Privacy</a>
+      </div>
+		  <div id="social_icons">
+		    <a href="https://www.facebook.com/mtdevans" title="Find me on Facebook" class="fb"></a>
+		    <a href="https://twitter.com/mtdevans" title="Follow me on Twitter" class="tt"></a>
+		    <a href="https://plus.google.com/105749333960895048875/?rel=author" title="Circle me on Plus" class="plus"></a>
+		    <a href="https://www.linkedin.com/mtdevans" title="Connect with me on LinkedIn" class="li"></a>
+		  </div>
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+			</div>
+			<br class="clear">
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+
+
+<script type='text/javascript' src='../../.././wp-includes/js/comment-reply.min.js@ver=3.9.13'></script>
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.104 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-07-26 03:02:45 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

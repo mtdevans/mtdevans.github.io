@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Anatomy of a Particle Physics Experiment | Matt Evans</title>
+<link rel="shortcut icon" href="http://mtdevans.com/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
+<link rel="pingback" href="http://mtdevans.com/xmlrpc.php" />
+<link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<script src="http://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Anatomy of a Particle Physics Experiment Comments Feed" href="http://mtdevans.com/2014/02/anatomy-of-a-particle-physics-experiment/feed/" />
+<link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery.js@ver=1.11.0'></script>
+<script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery-migrate.min.js@ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mtdevans.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Why Passwords Suck&#8230;And What You Can Do About Yours' href='../../../2013/08/why-passwords-suck-and-what-you-can-do-about-yours/index.html' />
+
+<link rel='shortlink' href='http://mtdevans.com/?p=573' />
+		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
+		
+<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="http://105749333960895048875/" />
+<meta name="keywords" content="physics,particle physics" />
+
+<link rel="canonical" href="index.html" />
+<!-- /all in one seo pack -->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFFFFF; }
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-33092385-2']);
+					_gaq.push(['_trackPageLoadTime']);
+            _gaq.push(['_setCustomVar',2,'tags','physics particle-physics',3],['_setCustomVar',3,'category','physics',3],['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			</head>
+
+<body class="single single-post postid-573 single-format-standard custom-background single-author singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+	    <div id="hdfltcont">
+			  <hgroup>
+				  <h1 id="site-title"><span><a href="../../../index.html" title="Matt Evans" rel="home">Matt Evans</a></span></h1>
+				  <h2 id="site-description">(( Physics, Security, Web ))</h2>
+			  </hgroup>
+			  <nav id="access" role="navigation">
+				  <h3 class="assistive-text">Main menu</h3>
+				  				  <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+				  <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+				  				  <div class="menu"><ul><li ><a href="../../../index.html">Home</a></li><li class="page_item page-item-106 page_item_has_children"><a href="../../../projects/index.html">Projects</a><ul class='children'><li class="page_item page-item-223 page_item_has_children"><a href="../../../projects/physics-problems/index.html" title="Matt Evans | Solutions to Some Common Physics Problems">Physics Problems</a><ul class='children'><li class="page_item page-item-323"><a href="../../../projects/physics-problems/polymer-bundle-2-d-microcanonical-approach.1.html" title="2-Dimensional Polymer Bundle (Microcanonical) | Matt Evans">2-D Polymer Bundle (Microcanonical Approach)</a></li><li class="page_item page-item-286"><a href="../../../projects/physics-problems/absorption-of-molecules-onto-a-surface.1.html">Adsorption of Molecules onto a Surface</a></li><li class="page_item page-item-226"><a href="../../../projects/physics-problems/deriving-stirlings-formula.1.html" title="Matt Evans | Physics Problems | Deriving Stirling's Formula">Deriving Stirling&#8217;s Formula</a></li><li class="page_item page-item-373"><a href="../../../projects/physics-problems/diatomic-molecule-as-rigid-rotor/index.html">Diatomic Molecule as Rigid Rotor</a></li><li class="page_item page-item-345"><a href="../../../projects/physics-problems/diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency | Matt Evans">Diesel Cycle Efficiency</a></li><li class="page_item page-item-280"><a href="../../../projects/physics-problems/exchange-of-particles-between-subsystems.1.html">Exchange of Particles Between Subsystems</a></li><li class="page_item page-item-500"><a href="../../../projects/physics-problems/fixed-target-vs-collider-experiments-with-discussion/index.html">Fixed Target vs Collider Experiments (with discussion)</a></li><li class="page_item page-item-525"><a href="../../../projects/physics-problems/interactions-of-charged-particles-with-matter/index.html">Interactions of Charged Particles with Matter</a></li><li class="page_item page-item-490"><a href="../../../projects/physics-problems/mandelstam-variables-with-identical-particles/index.html">Mandelstam Variables with Identical Particles</a></li><li class="page_item page-item-288"><a href="../../../projects/physics-problems/maxwell-relations.1.html">Maxwell Relations</a></li><li class="page_item page-item-319"><a href="../../../projects/physics-problems/mixture-of-two-ideal-gases-microcanonical-approach.1.html" title="Mixture of Two Ideal Gases (Microcanonical) | Matt Evans">Mixture of Two Ideal Gases</a></li><li class="page_item page-item-228"><a href="../../../projects/physics-problems/particle-in-a-one-dimensional-box.1.html" title="Matt Evans | Physics Problems | Particle in 1-D Box">Particle in a one-dimensional box</a></li><li class="page_item page-item-230"><a href="../../../projects/physics-problems/random-walk-of-two-drunks.1.html" title="Matt Evans | Physics Problems | Random Walk of Two Drunks">Random Walk of Two Drunks</a></li><li class="page_item page-item-356"><a href="../../../projects/physics-problems/reverse-carnot-cycle-efficiency.1.html" title="Matt Evans | Efficiency of the Reverse Carnot Cycle">Reverse Carnot Cycle Efficiency</a></li><li class="page_item page-item-233"><a href="../../../projects/physics-problems/system-of-n-harmonic-oscillators.1.html" title="Microcanonical System N Harmonic Oscillators | Matt Evans">System of N Harmonic Oscillators</a></li></ul></li><li class="page_item page-item-149"><a href="../../../projects/barcode.1.html" title="Tesco Discount Barcodes, Cracked.">Tesco Discount Barcodes, Cracked</a></li><li class="page_item page-item-122"><a href="../../../projects/zappysearch/index.html" title="ZappySearch, a Firefox Plugin">ZappySearch</a></li></ul></li><li class="page_item page-item-104 page_item_has_children"><a href="../../../about/index.html">About</a><ul class='children'><li class="page_item page-item-384"><a href="../../../about/privacy-policy.1.html">Privacy Policy</a></li></ul></li><li class="page_item page-item-205"><a href="../../../contact/index.html" title="Matt Evans | Contact">Contact</a></li></ul></div>
+			  </nav><!-- #access -->
+			  <br style="clear:both;">
+			</div>
+
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary" class="postprimary">
+			<div id="content" role="main">
+
+				
+					<nav id="nav-single">
+						<h3 class="assistive-text">Post navigation</h3>
+						<span class="nav-previous"><a href="../../../2013/08/why-passwords-suck-and-what-you-can-do-about-yours/index.html" rel="prev"><span class="meta-nav">&larr;</span> Previous</a></span>
+						<span class="nav-next"></span>
+					</nav><!-- #nav-single -->
+
+					
+<article id="post-573" class="post-573 post type-post status-publish format-standard has-post-thumbnail hentry category-physics category-technology tag-physics tag-particle-physics">
+	<header class="entry-header">
+		<h1 class="entry-title">Anatomy of a Particle Physics Experiment</h1>
+
+				<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="index.html" title="8.04 am" rel="bookmark"><time class="entry-date" datetime="2014-02-19T08:04:56+00:00" pubdate>19 February  2014</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../../../author/admin/index.html" title="View all posts by Matt" rel="author">Matt</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><a href="../../.././wp-content/uploads/2014/02/particlephysics.jpg" ><img src="../../.././wp-content/uploads/2014/02/particlephysics-229x300.jpg" alt="" title="Particle Physics from the viewpoint of one physicist." width="229" height="300" class="alignleft size-medium wp-image-613" /></a></p>
+<p>Recently I returned from a particle physics experiment at the Paul Scherrer Institut, a nuclear research lab in Switzerland. I was one of ten students from the University of Heidelberg and ETH, Zürich who had two weeks of (nearly) free reign to carry out an experiment on the PSI&#8217;s proton beam line. To put into perspective how crazy that is, ordinarily the going rate for such a privilege is €10,000s per <em>day</em>!</p>
+<p>Our goal was to measure a mysterious number called the &#8220;Panofsky ratio&#8221;. The ratio is named after Wolfgang Panofsky, first to attempt to measure it, and corresponds is the relative likelihood of two events involving particles called protons and pions occurring. It is important, because historically its value strongly contradicted the expectation of theoretical physicists. The two processes occur by means of two different forces &#8212; one by the <a href="https://en.wikipedia.org/wiki/Weak_interaction" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Weak_interaction']);" title="weak interaction">weak interaction</a> and the other by <a href="https://en.wikipedia.org/wiki/Quantum_electrodynamics" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Quantum_electrodynamics']);" title="Quantum electrodynamics (think: electromagnetism)"><abbr title="Quantum electrodynamics (think: electromagnetism).">QED</abbr></a> &#8212; and so the ratio was expected to be somewhere near the ratio of strengths of these interactions, give or take a few corrections, which happens to be around 30<span id="more-573"></span> (\(\gamma\)s represent <abbr title="particles of light">photons</abbr>):</p>
+<p>\begin{equation}<br />
+\text{Panofsky Ratio } P = \frac{R(p\pi\rightarrow n^* \rightarrow \gamma \gamma)}{R(p \pi \rightarrow n \gamma)} \label{eq:pr}<br />
+\end{equation}</p>
+<p>However, when Panofsky measured the ratio, he got a value of around 0.8. Notwithstanding the fact that this is actually wrong, it&#8217;s far enough enough from 30 to prove there is more going on than was expected. Panofsky&#8217;s measurement is off by about half from the true value of 1.546±0.009;<sup><a href="index.html#footnote_0_573" id="identifier_0_573" class="footnote-link footnote-identifier-link" title="See a recent remeasurement.">1</a></sup> initially we scoffed that such an eminent scientist could get a measurement so wrong. Well, having all but completed the analysis, how my view has changed! This is <em>not</em> an easy measurement to get right.</p>
+<div id="attachment_575" style="width: 310px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/11/eeee-run167675-evt876658967-3d.jpg" ><img src="../../.././wp-content/uploads/2013/11/eeee-run167675-evt876658967-3d-300x201.jpg" alt="Spot the Higgs! A Higgs candidate event from LHC." title="Spot the Higgs! A Higgs candidate event from LHC." width="300" height="201" class="size-medium wp-image-575" /></a><p class="wp-caption-text">Higgs candidate event from LHC. All of the tracks are particles emanating out from the collision point. The tracks are curved because, usefully, charged particles (such as electrons and protons) are deflect according to their mass and charge when they pass through a magnetic field. The red and blue blocks show how much energy was deposited in the <abbr title="'energy measurer'">calorimeter</abbr> at that point. There are perhaps seven or eight independent events here, but only one is a Higgs event. Taken from <a href="http://cds.cern.ch/record/1406073?ln=en" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://cds.cern.ch/record/1406073?ln=en']);">CERN</a>.</p></div>
+<h3>Particle Physics: The Basic Principle</h3>
+<p>In line with almost all particle physics experiments, the measurement of the ratio was essentially a counting experiment. You essentially fire particles at a target, be that a stationary target as here, or an opposite-travelling beam as with the LHC, and try to detect the off-coming particles so you can reconstruct what processes happened.</p>
+<p>With reporting on the news about the discovery of the Higgs boson, anyone could be forgiven for thinking, well, if you fire the right projectile at the right target, and watch and wait, eventually you&#8217;ll find what you&#8217;re looking for.</p>
+<p>Of course, nothing is ever quite so simple. Take the LHC. On the right is what an LHC Higgs boson event really looks like. In reality, reconstructed events like this are primarily for show &#8211; the actual analysis of these things is all done by specialized software (and hardware?) &#8211; indeed, it was one of my responsibilities to co-write this software for our group.</p>
+<p>Actually, the real challenge, not just in ours, but in all particle physics experiments, comes from the fact that <strong>interesting events hardly ever occur</strong> &#8211; it&#8217;s rather like searching for a silver needle amidst a stack of silvery grey ones. It&#8217;s a stack of needles because, as a necessary artefact of the triggering mechanism described below, most of the events really look very similar; only careful offline analysis can sift out the silver.</p>
+<div id="attachment_576" style="width: 160px" class="wp-caption alignleft"><a href="../../.././wp-content/uploads/2013/11/needles.jpg" ><img src="../../.././wp-content/uploads/2013/11/needles-150x150.jpg" alt="" title="Search for a Silver Needle in a Grey Needle-Stack" width="150" height="150" class="size-thumbnail wp-image-576" /></a><p class="wp-caption-text">Detecting interesting events is rather like searching for a silver needle in a massive stack of silvery-grey ones.</p></div>
+<p>The other main difficulty in the Panofsky ratio measurement is that all of the detectable particles are <strong>electrically neutral</strong>, not charged, particles. Neutral particles are harder to detect, track, and measure accurately than are charged particles. To measure charged particles, you just stick them in a magnetic field and measure the curvature of their paths; they can literally be observed with the naked eye (as seen in <a href="https://en.wikipedia.org/wiki/Cloud_chamber" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Cloud_chamber']);" title="Cloud chambers">cloud chambers</a>). Neutral particles, however, just pass right through, invisible.</p>
+<p>To measure neutral particles, all you can do is hope they will get stuck in your detector and dump all their energy there, that way you can read their energy off; although with more advanced tracking systems, you can actually reconstruct their trajectories and velocities to identify them more precisely. Our set-up was much more modest, but we knew exactly which particles to expect at exactly which energies, so particle identification was already done in the energy measurement.</p>
+<h3>Data Acquisition</h3>
+<p>In order to record the data from the experiment, some kind of data acquisition system is needed. For larger experiments, there can be literally millions of read-out channels, all of which must be accessed and their data read off and stored for each interesting event. Because of the extremely high rate of background events (thousands per second in this case), it is neither technologically possible nor desirable to record all of this data.</p>
+<p>For example, we had access to seven 8-bit <abbr title="Analogue-to-Digital Converter">ADC</abbr>s which ran at 200MHz to read off data &#8211; that&#8217;s a data throughput rate in the region of 1½ GB/s! Clearly even <em>we</em> had to whittle this down somehow, but for larger experiments this aspect of the experiment is <em>critical</em>. The usual trick is to employ a <strong>triggering</strong> mechanism to wake the electronics up when something interesting (might have) happened.</p>
+<div id="attachment_574" style="width: 310px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/11/setuph.jpg" ><img src="../../.././wp-content/uploads/2013/11/setuph-300x200.jpg" alt="Setup for Panofsky Ratio Measurement" title="Setup for Panofsky Ratio Measurement" width="300" height="200" class="size-medium wp-image-574" /></a><p class="wp-caption-text">Experimental set-up. The black paddles are the scintillators used to notify the electronics when a particle has passed through them. You can also see the lead and plastic shielding for the calorimeters (hidden under black cloth) poking into the picture on the right, to reduce the background stream of particles directly from the beam pipe or interactions with the metal frame etc. The target is suspended in the plastic bag at the centre of the set-up.</p></div>
+<p>To actually implement a triggering mechanism, we made use of <strong>scintillators</strong>, the long black paddles covered in tape. Scintillators work by giving out a signal when a particle passes through; if two or more are properly aligned in time, this allows the use of simple electronics to detect co-incident signals etc. which can tell you immediately something about how interesting the event is, and therefore whether you want to store and analyze it.</p>
+<h3>How are particles&#8217; energies measured?</h3>
+<p>The actual energy measurement, the most important part of the whole endeavour, comes from the <strong>calorimeters</strong>. We used two different calorimeter types, one of BGO (bismuth germanate) and the other NaI (sodium iodide).<sup><a href="index.html#footnote_1_573" id="identifier_1_573" class="footnote-link footnote-identifier-link" title="The reason for two kinds is they respond differently, and it was hoped the NaI could detect the neutrons better than the BGO calorimeters.">2</a></sup> Calorimeters measure energy by attempting to stop the particle which is entering, and sending signals about the electric charge inside to the electronics and data acquisition system. The signals are taken over a specific time interval, which creates an event trace showing how the voltage changed over a few nanoseconds. The area under the signal trace is related to how much energy the incident particle had, hopefully linearly.<sup><a href="index.html#footnote_2_573" id="identifier_2_573" class="footnote-link footnote-identifier-link" title="This is the response with an ideal calorimeter. Ours actually weren&rsquo;t linear across a wide range of energies, only within a certain range large enough to be acceptable.">3</a></sup></p>
+<p>I&#8217;ll upload an example event trace if I can get my hands on one.</p>
+<h3>The Panofsky Ratio</h3>
+<p>Ultimately, we were seeking a spectrum looking something along the lines of the spectrum on the left. The spectrum is a histogram of the area under the signal traces from the calorimeters. From the calorimeters, we obtained energy histograms such as on the right:</p>
+<p><div id="attachment_578" style="width: 310px" class="wp-caption alignleft"><a href="../../.././wp-content/uploads/2013/11/ideal.png" ><img src="../../.././wp-content/uploads/2013/11/ideal-300x206.png" alt="Ideal Spectrum" title="Ideal Spectrum" width="300" height="206" class="size-medium wp-image-578" /></a><p class="wp-caption-text">The ideal spectrum. The form of this spectrum is the goal, although such sharp peaks would obviously be smeared into Gaussian peaks etc. The Panofsky ratio is obtained by taking the ratio of events in the oblong to those in the peak. The x-axis scale is arbitrary.</p></div><div id="attachment_579" style="width: 310px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/11/CH2_11runs_nofsky_nocuts.png" ><img src="../../.././wp-content/uploads/2013/11/CH2_11runs_nofsky_nocuts-e1383496448979-300x202.png" alt="Energy histogram of calorimeter output" title="Energy histogram of calorimeter output" width="300" height="202" class="size-medium wp-image-579" /></a><p class="wp-caption-text">This is the raw output of the large blue sodium iodide calorimeter. It doesn&#8217;t particularly resemble the ideal plot. Hopefully it will look a bit better after background subtraction.</p></div></p>
+<p style="clear:left">Obviously, there is an absolute <em>ton</em> of background which needs to be dealt with!</p>
+<h3>Removing Background and Recovering the Ideal Plot</h3>
+<p>Ideally, since we are looking for interactions of pions with protons, we should have used a liquid hydrogen target &#8211; essentially a pure sea of protons. Alas, for unspecified safety reasons, we had to pass on the rocket fuel and use something more practical; plastic was the tool of choice.</p>
+<p>Plastic, though, being essentially solidified hydrocarbon, contains a lot of carbon which <em>also</em> interacts with our incoming pions. This is what makes the raw spectrum look so terrible. So in order to see how just the hydrogen acted with the pions, we had to know the effect of carbon by taking runs with a pure carbon target, and statistically subtracting the result from the plot.</p>
+<p>Even after a perfect statistical subtraction, of course, the resulting graph should not show such a sharp peak as in the left/top plot, but rather a <a href="https://en.wikipedia.org/wiki/Gaussian_distribution" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Gaussian_distribution']);" title="Gaussian spread">Gaussian spread</a> around the peak, as is the case with practically any experimental measurement.</p>
+<h3>And the Results?</h3>
+<p>Update: After much graft, the analysis genii of the group deduced a ratio of ~1. Not half bad, in my opinion! Progress is yet to be made on the precise value, and statistical and systematic uncertainties.</p>
+<p><del>And we really don&#8217;t know! Apparently this statistical subtraction stuff is hard to do well, and when you don&#8217;t have as awesome statistics as you&#8217;d like (we didn&#8217;t start taking data 24/7 till we had only <em>three days left</em>!), you can&#8217;t really afford to get it wrong.</del></p>
+<p><del>The fact is it&#8217;s so hard, we still haven&#8217;t managed to do it convincingly enough to draw any conclusions. I&#8217;ll update when we&#8217;ve made some progress.</del></p>
+<h3>Possible Improvements</h3>
+<p>There are a few aspects to our specific experiment which could be improved if it were repeated. Unfortunately, pure liquid hydrogen will forever remain out of bounds, but this was made worse in our case because the absorber, the series of white blocks directly in front of the beam outlet designed to taper the beam momentum (you can kind of see it in the experimental set-up) was also made of plastic. This poisoned our measurement in a way difficult to quantify.</p>
+<p>In addition, we struggled initially with incredibly low rates (roughly 0.3Hz) and it wasn&#8217;t until the final few days that we changed our set-up in desperation, introducing the never-before-used big blue calorimeter, and had 24/7 data-taking (and very sleepy people). This is why you really should <em>make sure everything&#8217;s set up and functioning before the end of the first week</em>! You&#8217;ll thank yourself.</p>
+<h3>Conclusion</h3>
+<p>No group in over four years managed to measure the Panofsky ratio with any success. But even with the odds against us from the beginning, we had a decent stab at this experiment, and the outcome was far better than expected!</p>
+<p>Whilst our stated aim was to obtain the measurement, in reality the aim was to experience being a part of a spontaneous physics collaboration, learning hands-on what life as an experimental particle physicist is like. It was a fantastic opportunity and I&#8217;m personally glad I took it. If you as a student are offered a similar opportunity, don&#8217;t let it pass you by.</p>
+<div id="attachment_580" style="width: 680px" class="wp-caption aligncenter"><a href="../../.././wp-content/uploads/2013/11/psi_collaboration3-e1383496521417.jpg" ><img src="../../.././wp-content/uploads/2013/11/psi_collaboration3-e1383496521417.jpg" alt="PSI-13 Collaboration" title="PSI-13 Collaboration" width="670" height="346" class="size-full wp-image-580" /></a><p class="wp-caption-text">PSI-13 Collaboration. Photo credit: <a href="http://www.flickr.com/photos/nberger/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.flickr.com/photos/nberger/']);" title="Niklaus Berger">Niklaus Berger</a>.</p></div>
+<ol class="footnotes"><li id="footnote_0_573" class="footnote">See <a href="http://www.sciencedirect.com/science/article/pii/037026937790449X" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.sciencedirect.com/science/article/pii/037026937790449X']);" title="Panofsky Ratio measurement">a recent remeasurement</a>. [<a href="index.html#identifier_0_573" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_1_573" class="footnote">The reason for two kinds is they respond differently, and it was hoped the NaI could detect the neutrons better than the BGO calorimeters. [<a href="index.html#identifier_1_573" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_2_573" class="footnote">This is the response with an ideal calorimeter. Ours actually weren&#8217;t linear across a wide range of energies, only within a certain range large enough to be acceptable. [<a href="index.html#identifier_2_573" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="../../../category/physics/index.html" title="View all posts in Physics" rel="category tag">Physics</a>, <a href="../../../category/technology/index.html" title="View all posts in Technology" rel="category tag">Technology</a> and tagged <a href="../../../tag/physics/index.html" rel="tag">Physics</a>, <a href="../../../tag/particle-physics/index.html" rel="tag">particle physics</a> by <a href="../../../author/admin/index.html">Matt</a>. Bookmark the <a href="index.html" title="Permalink to Anatomy of a Particle Physics Experiment" rel="bookmark">permalink</a>.		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-573 -->
+
+					
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://mtdevans.com/2014/02/anatomy-of-a-particle-physics-experiment/';
+    var disqus_identifier = '573 http://mtdevans.com/?p=573';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'mtdevans';
+    var disqus_title = "Anatomy of a Particle Physics Experiment";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=573';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/mtdevans.com\/2014\/02\/anatomy-of-a-particle-physics-experiment\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" action="../../../index.html">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Me</h3>			<div class="textwidget"><p>Hello and welcome! I'm Matt Evans, a Physics student at the University of Manchester with an unhealthy interest in technology, software, security, and the web.</p>
+<p>I don't hang out here <em>too</em> much at the moment, but <a href="../../../projects/index.html" title="A list of the projects I'm currently involved with">any projects</a> I'm working on are kept up to date - both Physics- and web-related.</p>
+</div>
+		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-17"><a href="../../../category/general/index.html" title="Posts which don&#039;t fit into any other category">General</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../../../category/physics/index.html" title="View all posts filed under Physics">Physics</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../category/security/index.html" title="View all posts filed under Security">Security</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../../../category/technology/index.html" title="My thoughts on and experience in the world of technology.">Technology</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../../../category/web/index.html" title="View all posts filed under Web">Web</a>
+</li>
+		</ul>
+</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='../../../tag/about-me/index.html' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>About Me</a>
+<a href='../../../tag/cakephp/index.html' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>CakePHP</a>
+<a href='../../../tag/javascript/index.html' class='tag-link-27' title='3 topics' style='font-size: 15.636363636364pt;'>JavaScript</a>
+<a href='../../../tag/particle-physics/index.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>particle physics</a>
+<a href='../../../tag/passwords/index.html' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>passwords</a>
+<a href='../../../tag/physics/index.html' class='tag-link-21' title='6 topics' style='font-size: 22pt;'>Physics</a>
+<a href='../../../tag/search/index.html' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>search</a>
+<a href='../../../tag/security-2/index.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>security</a>
+<a href='../../../tag/solved-problems/index.html' class='tag-link-16' title='2 topics' style='font-size: 12.581818181818pt;'>solved problems</a>
+<a href='../../../tag/tutorial/index.html' class='tag-link-24' title='2 topics' style='font-size: 12.581818181818pt;'>Tutorial</a>
+<a href='../../../tag/virtualbox/index.html' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>VirtualBox</a>
+<a href='../../../tag/virtualization/index.html' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>Virtualization</a>
+<a href='../../../tag/web-development/index.html' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Web Development</a>
+<a href='../../../tag/welcome/index.html' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>welcome</a>
+<a href='../../../tag/wordpress/index.html' class='tag-link-8' title='2 topics' style='font-size: 12.581818181818pt;'>Wordpress</a></div>
+</aside>		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+      <div id="copyrightinfo">
+        &copy; Copyright Matt Evans 2014 - <a href="../../../about/privacy-policy.1.html" title="How I protect you and your data.">Privacy</a>
+      </div>
+		  <div id="social_icons">
+		    <a href="https://www.facebook.com/mtdevans" title="Find me on Facebook" class="fb"></a>
+		    <a href="https://twitter.com/mtdevans" title="Follow me on Twitter" class="tt"></a>
+		    <a href="https://plus.google.com/105749333960895048875/?rel=author" title="Circle me on Plus" class="plus"></a>
+		    <a href="https://www.linkedin.com/mtdevans" title="Connect with me on LinkedIn" class="li"></a>
+		  </div>
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+			</div>
+			<br class="clear">
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});</script>
+
+<script type='text/javascript' src='../../.././wp-includes/js/comment-reply.min.js@ver=3.9.13'></script>
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.094 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-07-26 03:02:54 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

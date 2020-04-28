@@ -1,0 +1,61 @@
+'''
+--- Title:      Schroedinger Equation in Harmonic Potential
+--- Author:     Matt Evans (mtdevans.com)
+--- Copyright:  Do what you want with it.
+
+This program basically just draws the functions for a
+given value of epsilon. Epsilon should be an integer n+1/2
+for good solutions.
+'''
+
+import pylab as lab
+import math
+
+N = 60000 # iterations
+
+h = 0.0001
+h2 = pow(h,2)
+
+epsilon = 2.5 # n+1/2
+
+y = 0.0
+k = 0.0
+x = -1*(N-2)*h
+
+k_minus_2 = epsilon + x-2*h # k_0
+k_minus_1 = epsilon + x-h # k_1
+a = 0.1
+y_minus_2 = 0 # y_0
+y_minus_1 = a # y_1
+
+x_out = []
+y_out = []
+
+n=-1*N+2
+
+while n<N-2:
+  n+=1
+  x += h;
+  k = 2*epsilon - pow(x, 2)
+  b = h2/12
+  y = ( 2*(1-5*b*k_minus_1) * y_minus_1 - (1+b*k_minus_2) * y_minus_2 ) / (1 + b * k)
+
+  # Save for plotting
+  x_out.append(x)
+  y_out.append(y)
+
+  # Shift for next iteration
+  y_minus_2 = y_minus_1
+  y_minus_1 = y
+  k_minus_2 = k_minus_1
+  k_minus_1 = k
+
+
+# Plot
+lab.figure(1)
+lab.plot(x_out, y_out, label="$\epsilon = "+repr(epsilon)+"$")
+lab.xlabel("x")
+lab.ylabel("y")
+lab.title("Schroedinger Eqn in Harmonic Potential")
+lab.legend(loc=1)
+lab.show()
