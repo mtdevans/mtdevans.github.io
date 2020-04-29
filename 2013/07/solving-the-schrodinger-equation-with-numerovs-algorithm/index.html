@@ -15,27 +15,27 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <title>Solving the Schrödinger Equation with Numerov&#8217;s Algorithm | Matt Evans</title>
-<link rel="shortcut icon" href="http://mtdevans.com/favicon.ico" />
+<link rel="shortcut icon" href="https://mtdevans.com/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
-<link rel="pingback" href="http://mtdevans.com/xmlrpc.php" />
-<link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<link rel="pingback" href="https://mtdevans.com/xmlrpc.php" />
+<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
-<script src="http://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<script src="https://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
 <link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Solving the Schrödinger Equation with Numerov&#8217;s Algorithm Comments Feed" href="http://mtdevans.com/2013/07/solving-the-schrodinger-equation-with-numerovs-algorithm/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Solving the Schrödinger Equation with Numerov&#8217;s Algorithm Comments Feed" href="https://mtdevans.com/2013/07/solving-the-schrodinger-equation-with-numerovs-algorithm/feed/" />
 <link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
 <script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery.js@ver=1.11.0'></script>
 <script type='text/javascript' src='../../.././wp-includes/js/jquery/jquery-migrate.min.js@ver=1.2.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mtdevans.com/xmlrpc.php?rsd" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtdevans.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
 <link rel='prev' title='Fourth Order Runge-Kutta Algorithm in Javascript' href='../../05/fourth-order-runge-kutta-algorithm-in-javascript-with-demo/index.html' />
 <link rel='next' title='Why Passwords Suck&#8230;And What You Can Do About Yours' href='../../08/why-passwords-suck-and-what-you-can-do-about-yours/index.html' />
 
-<link rel='shortlink' href='http://mtdevans.com/?p=531' />
+<link rel='shortlink' href='https://mtdevans.com/?p=531' />
 		<style type="text/css">
 						ol.footnotes li {list-style-type:decimal;}
 						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
@@ -147,7 +147,7 @@ window.onload = function() {
   });
 }
 </script> <em>Note: On a smartphone? <del><em>Possibly</em>(?) wait till you&#8217;re on a more powerful machine (unless you&#8217;re hard; let me know in the comments how it worked out).</del> It works fine! Likewise, using an old Internet Explorer? &#8211; well, don&#8217;t blame me if it crashes or just nothing happens. <img src="../../.././wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley" /> </em></p>
-<p>You can find the code for this <a href="../../.././wp-content/custom-includes/js/qm_harm_osc.js" onclick="javascript:_gaq.push(['_trackEvent','download','http://mtdevans.com/wp-content/custom-includes/js/qm_harm_osc.js']);" title="JavaScript code for this demo">in JavaScript</a> or a really bare-bones version <a href="../../.././wp-content/custom-includes/js/sch.py.txt"  title="Python code for this demo - I warned you...">in Python</a>.</p>
+<p>You can find the code for this <a href="../../.././wp-content/custom-includes/js/qm_harm_osc.js" onclick="javascript:_gaq.push(['_trackEvent','download','https://mtdevans.com/wp-content/custom-includes/js/qm_harm_osc.js']);" title="JavaScript code for this demo">in JavaScript</a> or a really bare-bones version <a href="../../.././wp-content/custom-includes/js/sch.py.txt"  title="Python code for this demo - I warned you...">in Python</a>.</p>
 <ol class="footnotes"><li id="footnote_0_531" class="footnote">where \(m\) is the mass of the particle, \(x\) is the position, \(\hbar\) is the Plank constant, \(V(x)\) is the potential the particle is in, \(E\) is the particle&#8217;s energy, and \(\psi(x)\) is the wavefunction. [<a href="index.html#identifier_0_531" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_1_531" class="footnote">A harmonic oscillator is simply an object which is moving in a constant field of some kind. For example a gravitational or electric field. A good example is a pendulum, or a ball bouncing on a piece of elastic. Harmonic oscillators are vitally important in physics and physical chemistry, because they can be used to model the complex vibrations and oscillations of molecules, atoms, and sub-atomic particles to a reasonable degree of accuracy, and are really rather simple to solve. [<a href="index.html#identifier_1_531" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_2_531" class="footnote">This is because wavefunctions have to be normalizable, and so a wavefunction which goes to infinity as x increases is not a physically relevant one. [<a href="index.html#identifier_2_531" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_3_531" class="footnote">Don&#8217;t confuse this \(n\) with the index \(n\) from the definition of the Numerov algorithm! [<a href="index.html#identifier_3_531" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>			</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
@@ -174,8 +174,8 @@ window.onload = function() {
 
 <script type="text/javascript">
 /* <![CDATA[ */
-    var disqus_url = 'http://mtdevans.com/2013/07/solving-the-schrodinger-equation-with-numerovs-algorithm/';
-    var disqus_identifier = '531 http://mtdevans.com/?p=531';
+    var disqus_url = 'https://mtdevans.com/2013/07/solving-the-schrodinger-equation-with-numerovs-algorithm/';
+    var disqus_identifier = '531 https://mtdevans.com/?p=531';
     var disqus_container_id = 'disqus_thread';
     var disqus_domain = 'disqus.com';
     var disqus_shortname = 'mtdevans';
