@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>Adsorption of Molecules Onto a Surface // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adsorption of Molecules Onto a Surface"/>
+<meta name="twitter:description" content="Many thanks to Bart Andrews for this contribution!
+Question Consider a gas in contact with a solid surface. The molecules of the gas can adsorb to specific sites on the surface. These sites are sparsely enough distributed over the surface that they do not directly interact. In total, there are N adsorption sites, and each can adsorb n = 0, n = 1, or n = 2 molecules. When an adsorption site is unoccupied, the energy of the site is zero."/>
+
+    <meta property="og:title" content="Adsorption of Molecules Onto a Surface" />
+<meta property="og:description" content="Many thanks to Bart Andrews for this contribution!
+Question Consider a gas in contact with a solid surface. The molecules of the gas can adsorb to specific sites on the surface. These sites are sparsely enough distributed over the surface that they do not directly interact. In total, there are N adsorption sites, and each can adsorb n = 0, n = 1, or n = 2 molecules. When an adsorption site is unoccupied, the energy of the site is zero." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/projects/physics-problems/adsorption-of-molecules-onto-a-surface/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-02-11T13:34:45+00:00" />
+<meta property="article:modified_time" content="2023-02-11T13:34:45+00:00" />
+
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Adsorption of Molecules Onto a Surface</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 11, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics-problems/">physics-problems</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Many thanks to <a href="http://www.bartholomewandrews.com/">Bart Andrews</a> for this contribution!</p>
+<h2 id="question">Question</h2>
+<p>Consider a gas in contact with a solid surface. The molecules of the gas can adsorb to specific sites on the surface. These sites are sparsely enough distributed over the surface that they do not directly interact. In total, there are N adsorption sites, and each can adsorb n = 0, n = 1, or n = 2 molecules. When an adsorption site is unoccupied, the energy of the site is zero.</p>
+<p>When an adsorption site is occupied by a single molecule, the energy of the site is \(ε_1\). When an adsorption site is doubly occupied, the adsorption energy is \(ε_2\). In addition, the two adsorbed molecules can interact in a vibrational mode with frequency ω, so that the energy of the doubly occupied adsorption site is \[\varepsilon_2+\nu \hbar \omega \text{ with } \nu = 0,1,2,&hellip;\]</p>
+<p>The gas above the surface can be considered as a heat and particle reservoir with temperature T and chemical potential μ.</p>
+<ol>
+<li>Calculate the grand canonical partition sum \(Z_G\).</li>
+<li>Calculate the grand canonical potential J.</li>
+<li>Calculate the mean number of adsorbed molecules on the surface directly from \(Z_G\).</li>
+<li>Calculate the mean number of adsorbed molecules on the surface directly from J.</li>
+<li>Calculate the probability that an adsorption site is in the state with \(n = 2\) and \(ν = 3\).</li>
+</ol>
+<h2 id="solution">Solution</h2>
+<p><strong>1. Calculate the Grand Canonical Partition Sum</strong></p>
+<p>In the question we are told that the binding sites are “sparsely enough distributed over the surface that they do not directly interact” and so we can use the relation \(Z_G = z_G^N\) where \(z_G\) is the single binding site partition sum. From this, we can write down the grand canonical partition sum.</p>
+<p>\[ Z_G = z_G^N = \left( \underbrace{1}_{n=0} + \underbrace{e^{- \beta ( \epsilon_1 - \mu)}}_{n=1} + \underbrace{\sum_{\nu = 0}^{\infty} e^{- \beta ( \epsilon_2 + \nu \hslash \omega - 2 \mu)}}_{n=2} \right) ^N \]</p>
+<p>So the first term is for the \(n=0\) state and the second term is for the \(n=1\) state. These terms were covered in lectures and so should be fairly apparent. The third term has a factor of two before the \(\beta\) to show that there are two particles in the microstate and the expression for the energy of this microstate is given in the question. In a partition sum we have to sum over all possible microstates and hence over all possible \(\nu\) in this case. This infinite geometric sum can be evaluated if desired since \(e^{2 \beta \hslash \omega} &gt; 1 \). However, this does not simplify things much and so it will not be done here.</p>
+<p><strong>2. Calculate the Grand Canonical Potential</strong></p>
+<p>For this part you can use the definition of the grand canonical potential and simply substitute in the expression for the grand canonical partition sum.</p>
+<p>\begin{eqnarray}
+J &amp; = &amp; -k_B T \ln Z_G \nonumber \\
+&amp; = &amp; -N K_B T \ln z_G \nonumber \\
+&amp; = &amp; -N k_B T \ln \left( 1 + e^{- \beta ( \epsilon_1 – \mu)} + \sum_{\nu = 0}^{\infty} e^{- \beta ( \epsilon_2 + \nu \hslash \omega – 2 \mu)} \right) \nonumber
+\end{eqnarray}</p>
+<p><strong>3. Calculate the mean number of adsorbed molecules from \(Z_G\).</strong></p>
+<p>For this part we can use a similar approach as to what was shown in lectures.</p>
+<p>\begin{eqnarray}
+\langle n \rangle &amp; = &amp; N \left( \frac{0+1 \cdot e^{- \beta ( \epsilon_1 – \mu)} + 2 \cdot  \sum_{\nu = 0}^{\infty} e^{- \beta ( \epsilon_2 + \nu \hslash \omega – 2 \mu)}}{z_G} \right) \nonumber \\
+&amp; = &amp;  N \left( \frac{e^{- \beta ( \epsilon_1 – \mu)} + \sum_{\nu = 0}^{\infty} 2e^{- \beta ( \epsilon_2 + \nu \hslash \omega – 2 \mu)}}{z_G} \right) \nonumber
+\end{eqnarray}</p>
+<p>So in the brackets we are calculating the mean number of adsorbed molecules per binding site and then we multiply this by \(N\) to get mean number of adsorbed molecules on the surface. The numerator is sum of number of molecules times the microstate and this is then divided by the total number of states. This works just like any arithmetic mean.</p>
+<p><strong>4. Calculate the mean number of adsorbed molecules from J</strong></p>
+<p>Here, we need to make use of the thermodynamic relation between the grand canonical potential, the chemical potential and the particle number.</p>
+<p>\begin{eqnarray}
+-\langle n \rangle &amp; = &amp; \partial J \over \partial \mu \nonumber \\
+&amp; = &amp; – N k_B T {\partial \ln z_G \over \partial \mu} \nonumber \\
+\langle n \rangle &amp; = &amp; N k_B T \left( \frac{z\prime_G}{z_G} \right) \nonumber \\
+&amp; = &amp; N k_B T \beta \left(  \frac{e^{-\beta ( \epsilon_1 – \mu)} + \sum_{\nu = 0}^{\infty} 2e^{-\beta ( \epsilon_2 + \nu \hslash \omega – 2 \mu)}}{z_G} \right) \nonumber \\
+&amp; = &amp; N \left(  \frac{e^{- \beta ( \epsilon_1 – \mu)} + \sum_{\nu = 0}^{\infty} 2e^{- \beta ( \epsilon_2 + \nu \hslash \omega – 2 \mu)}}{z_G} \right) \nonumber
+\end{eqnarray}</p>
+<p>This is the same expression as we derived in part three, as required.</p>
+<p><strong>5. Probability an adsorption site is in the state \(n=2\) and \(\nu = 3\)</strong></p>
+<p>This expression is simply the state divided by the sum of all possible states.</p>
+<p>\[ P(n=2 ; \nu = 3 ) = \frac{ e^{- \beta (\epsilon_2 + 3 \hslash \omega - 2 \mu)}}{z_G}. \]</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

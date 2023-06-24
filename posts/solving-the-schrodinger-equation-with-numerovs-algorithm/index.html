@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>Solving the Schrödinger Equation with Numerov&#39;s Algorithm // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Solving the Schrödinger Equation with Numerov&#39;s Algorithm"/>
+<meta name="twitter:description" content="The Schrödinger equation describes the energy and time-evolution of a particle or system of particles, and is one of the fundamental building blocks of modern physics. In it’s general form, the (time-independent) Schrödinger equation for a one-dimensional harmonic oscillator reads thus:1
+\begin{equation}
+\label{eq:sch}
+\frac{-\hbar^2}{2m} \frac{\partial^2}{\partial z^2}\psi(z) &#43; \frac{mz^2}{2} \psi(z) = E\psi(z)
+\end{equation}
+There are relatively few situations in which the Schrödinger equation can be solved analytically, and numerical methods and approximations are one way around that analytical limitation. To demonstrate how this is possible and how a numerical solution works, what better way than to solve a system which can be solved analytically and comparing the results."/>
+
+    <meta property="og:title" content="Solving the Schrödinger Equation with Numerov&#39;s Algorithm" />
+<meta property="og:description" content="The Schrödinger equation describes the energy and time-evolution of a particle or system of particles, and is one of the fundamental building blocks of modern physics. In it’s general form, the (time-independent) Schrödinger equation for a one-dimensional harmonic oscillator reads thus:1
+\begin{equation}
+\label{eq:sch}
+\frac{-\hbar^2}{2m} \frac{\partial^2}{\partial z^2}\psi(z) &#43; \frac{mz^2}{2} \psi(z) = E\psi(z)
+\end{equation}
+There are relatively few situations in which the Schrödinger equation can be solved analytically, and numerical methods and approximations are one way around that analytical limitation. To demonstrate how this is possible and how a numerical solution works, what better way than to solve a system which can be solved analytically and comparing the results." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/posts/solving-the-schrodinger-equation-with-numerovs-algorithm/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2013-07-10T13:05:23+00:00" />
+<meta property="article:modified_time" content="2013-07-10T13:05:23+00:00" />
+
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Solving the Schrödinger Equation with Numerov&#39;s Algorithm</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 10, 2013
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics/">physics</a>
+              <a class="tag" href="https://mtdevans.com/tags/javascript/">JavaScript</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>The Schrödinger equation describes the energy and time-evolution of a particle or system of particles, and is one of the fundamental building blocks of modern physics. In it’s general form, the (time-independent) Schrödinger equation for a one-dimensional harmonic oscillator reads thus:<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>\begin{equation}
+\label{eq:sch}
+\frac{-\hbar^2}{2m} \frac{\partial^2}{\partial z^2}\psi(z) + \frac{mz^2}{2} \psi(z) = E\psi(z)
+\end{equation}</p>
+<p>There are relatively few situations in which the Schrödinger equation can be solved analytically, and numerical methods and approximations are one way around that analytical limitation. To demonstrate how this is possible and how a numerical solution works, what better way than to solve a system which <strong>can</strong> be solved analytically and comparing the results.</p>
+<p>In solving the Schrödinger equation, we will start with one of the simplest interesting quantum mechanical systems, the quantum mechanical harmonic oscillator.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> This is described in \eqref{eq:sch} above.</p>
+<p>We will make use of the Numerov algorithm which is particularly suited to solving second order differential equations of the form \(y\prime\prime(x) + k(x)y(x)=0\). You can read more about it elsewhere, including its derivation etc., but its form is quite simple and easy to code:</p>
+<p>\begin{equation}
+\label{eq:numerov}
+\left(1+\frac{1}{12}h^2k_{n+1}\right)y_{n+1} = 2\left(1-\frac{5}{12}h^2k_n\right)y_n -\left(1+\frac{1}{12}h^2k_{n-1}\right)y_{n-1}+O(h^6)
+\end{equation}</p>
+<p>As you can see, it provides \(6^{\text{th}}\) order accuracy which is pretty impressive for such a simple algorithm. In the above equation, \(h\) is the step size between each iteration, and \(n\) is the index of iteration; \(y\) and \(k\) relate to those in the formula in the paragraph above.
+Thus we need to manipulate \eqref{eq:sch} into a (dimensionless) form which the Numerov algorithm can solve: using a substitution \(E=\varepsilon \hbar \omega\) and \(z=x\sqrt{\frac{\hbar}{m\omega}}\) we can rearrange \eqref{eq:sch} into the form:</p>
+<p>\begin{equation}
+\label{eq:solve}
+\psi\prime\prime(x) + (2\varepsilon – x^2)\psi(x) = 0
+\end{equation}</p>
+<p>Now the Schrödinger equation is in the correct form, we can simply plug it into the Numerov algorithm and see what comes out.</p>
+<h2 id="finding-the-eigenvalues-numerically"> Finding the Eigenvalues Numerically</h2>
+<p>To determine the eigenvalues, the program scans a range of energies, denoted by the Greek letter \(\varepsilon\) in the above equations, and tests for when the tail of the graph changes from \(+\infty\) to \(-\infty\) or vice versa. When that happens, the tail must have crossed zero, and therefore it must have stepped over a solution.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> The programme then goes backwards and so on with increased resolution, honing in until it finds all of the solutions we want.</p>
+<p>Given the substitution above, we should expect the eigenvalues to be \(\varepsilon = n + \frac 12\) where \(n\) is an integer from zero (representing the ground state) upwards.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Hit <!-- raw HTML omitted -->F12<!-- raw HTML omitted --> to pull up the web console before you run the simulation to see what results you actually get.</p>
+<button type="button" id="num_but">Solve Schrödinger Equation!</button>
+<script type="text/javascript" src="/js/xy.min.js"></script>
+<script type="text/javascript" src="/js/qm_harm_osc.js"></script>
+<span id="numerov_container" style="display:block;text-align:center"></span>
+<script type="text/javascript">
+window.onload = function() {
+  document.getElementById('num_but').onclick = (function() {
+    window.donumerov((new xyjs({w:550,h:320,parent:'numerov_container'})));
+  });
+}
+</script>
+
+<p>You can find the code for this <a href="/js/qm_harm_osc.js" title="JavaScript code for this demo">in JavaScript</a> or a really bare-bones version <a href="/js/sch.py.txt"  title="Python code for this demo - I warned you...">in Python</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>where \(m\) is the mass of the particle, \(x\) is the position, \(\hbar\) is the Plank constant, \(V(x)\) is the potential the particle is in, \(E\) is the particle’s energy, and \(\psi(x)\) is the wavefunction.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>A harmonic oscillator is simply an object which is moving in a constant field of some kind. For example a gravitational or electric field. A good example is a pendulum, or a ball bouncing on a piece of elastic. Harmonic oscillators are vitally important in physics and physical chemistry, because they can be used to model the complex vibrations and oscillations of molecules, atoms, and sub-atomic particles to a reasonable degree of accuracy, and are really rather simple to solve.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>This is because wavefunctions have to be normalizable, and so a wavefunction which goes to infinity as x increases is not a physically relevant one.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Don’t confuse this \(n\) with the index \(n\) from the definition of the Numerov algorithm!&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

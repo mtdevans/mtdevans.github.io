@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Evans</title>
+    <link>https://mtdevans.com/projects/</link>
+    <description>Recent content on Matt Evans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 11 Feb 2023 14:18:16 +0000</lastBuildDate><atom:link href="https://mtdevans.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>https://mtdevans.com/projects/main/</link>
+      <pubDate>Fri, 10 Feb 2023 23:04:56 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/main/</guid>
+      <description>Physics Notes, Solutions, and Related Stuff
+I’ve written up a couple of foundational and a few somewhat challenging physics problems and notes which I think the web could benefit from. I’ve started with a few from Statistical Physics, and will be adding more in time that&amp;rsquo;s all, folks!.
+Note: I recently migrated these pages from my old site, so be sure to look out for typos.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,114 +1,96 @@
-<!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="en-US">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>2-D Polymer Bundle (Microcanonical Approach) | Matt Evans</title>
-<link rel="shortcut icon" href="https://mtdevans.com/favicon.ico" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
-<link rel="pingback" href="https://mtdevans.com/xmlrpc.php" />
-<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-<!--[if lt IE 9]>
-<script src="https://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
-<link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtdevans.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Mixture of Two Ideal Gases' href='../mixture-of-two-ideal-gases-microcanonical-approach.1.html' />
-<link rel='next' title='Diesel Cycle Efficiency' href='../diesel-cycle-efficiency.1.html' />
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>2-D Polymer Bundle (Microcanonical Approach) // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
 
-<link rel='shortlink' href='../../../index.html@p=323.html' />
-		<style type="text/css">
-						ol.footnotes li {list-style-type:decimal;}
-						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
-		
-<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
-<link rel="author" href="http://105749333960895048875/" />
-<meta name="description" content="Here you'll find the solution to a problem pertaining to modelling a 2-D polymer and using the microcanonical ensemble to derive properties of the system." />
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2-D Polymer Bundle (Microcanonical Approach)"/>
+<meta name="twitter:description" content="This is a microcanonical ensemble approach to a simple model of a two dimensional polymer bundle. The professor of the course I took does a lot of research in the area of polymer physics and so set a few problems pertaining to them. They aren’t easily found in textbooks or online either (this website notwithstanding) but are nevertheless quite interesting in themselves. We also approached this same problem from the canonical ensemble which I’ll upload soon."/>
 
-<meta name="keywords" content="polymer,microcanonical,ensemble,polymer bundle,entropy,energy,physics,solution,equation of state" />
-
-<link rel="canonical" href="../polymer-bundle-2-d-microcanonical-approach.1.html" />
-<!-- /all in one seo pack -->
-<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #FFFFFF; }
-</style>
-<style type="text/css" id="syntaxhighlighteranchor"></style>
-
-            <script type="text/javascript">//<![CDATA[
-            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-33092385-2']);
-					_gaq.push(['_trackPageLoadTime']);
-            _gaq.push(['_trackPageview']);
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-            //]]></script>
-			</head>
-
-<body class="page page-id-323 page-child parent-pageid-223 page-template-default custom-background single-author singular two-column right-sidebar">
-<div id="page" class="hfeed">
-	<header id="branding" role="banner">
-	    <div id="hdfltcont">
-			  <hgroup>
-				  <h1 id="site-title"><span><a href="../../../index.html" title="Matt Evans" rel="home">Matt Evans</a></span></h1>
-				  <h2 id="site-description">(( Physics, Security, Web ))</h2>
-			  </hgroup>
-			  <nav id="access" role="navigation">
-				  <h3 class="assistive-text">Main menu</h3>
-				  				  <div class="skip-link"><a class="assistive-text" href="../polymer-bundle-2-d-microcanonical-approach.1.html#content" title="Skip to primary content">Skip to primary content</a></div>
-				  <div class="skip-link"><a class="assistive-text" href="../polymer-bundle-2-d-microcanonical-approach.1.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-				  				  <div class="menu"><ul><li ><a href="../../../index.html">Home</a></li><li class="page_item page-item-106 page_item_has_children current_page_ancestor"><a href="../../index.html">Projects</a><ul class='children'><li class="page_item page-item-223 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html" title="Matt Evans | Solutions to Some Common Physics Problems">Physics Problems</a><ul class='children'><li class="page_item page-item-323 current_page_item"><a href="../polymer-bundle-2-d-microcanonical-approach.1.html" title="2-Dimensional Polymer Bundle (Microcanonical) | Matt Evans">2-D Polymer Bundle (Microcanonical Approach)</a></li><li class="page_item page-item-286"><a href="../absorption-of-molecules-onto-a-surface.1.html">Adsorption of Molecules onto a Surface</a></li><li class="page_item page-item-226"><a href="../deriving-stirlings-formula.1.html" title="Matt Evans | Physics Problems | Deriving Stirling's Formula">Deriving Stirling&#8217;s Formula</a></li><li class="page_item page-item-373"><a href="../diatomic-molecule-as-rigid-rotor/index.html">Diatomic Molecule as Rigid Rotor</a></li><li class="page_item page-item-345"><a href="../diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency | Matt Evans">Diesel Cycle Efficiency</a></li><li class="page_item page-item-280"><a href="../exchange-of-particles-between-subsystems.1.html">Exchange of Particles Between Subsystems</a></li><li class="page_item page-item-500"><a href="../fixed-target-vs-collider-experiments-with-discussion/index.html">Fixed Target vs Collider Experiments (with discussion)</a></li><li class="page_item page-item-525"><a href="../interactions-of-charged-particles-with-matter/index.html">Interactions of Charged Particles with Matter</a></li><li class="page_item page-item-490"><a href="../mandelstam-variables-with-identical-particles/index.html">Mandelstam Variables with Identical Particles</a></li><li class="page_item page-item-288"><a href="../maxwell-relations.1.html">Maxwell Relations</a></li><li class="page_item page-item-319"><a href="../mixture-of-two-ideal-gases-microcanonical-approach.1.html" title="Mixture of Two Ideal Gases (Microcanonical) | Matt Evans">Mixture of Two Ideal Gases</a></li><li class="page_item page-item-228"><a href="../particle-in-a-one-dimensional-box.1.html" title="Matt Evans | Physics Problems | Particle in 1-D Box">Particle in a one-dimensional box</a></li><li class="page_item page-item-230"><a href="../random-walk-of-two-drunks.1.html" title="Matt Evans | Physics Problems | Random Walk of Two Drunks">Random Walk of Two Drunks</a></li><li class="page_item page-item-356"><a href="../reverse-carnot-cycle-efficiency.1.html" title="Matt Evans | Efficiency of the Reverse Carnot Cycle">Reverse Carnot Cycle Efficiency</a></li><li class="page_item page-item-233"><a href="../system-of-n-harmonic-oscillators.1.html" title="Microcanonical System N Harmonic Oscillators | Matt Evans">System of N Harmonic Oscillators</a></li></ul></li><li class="page_item page-item-149"><a href="../../barcode.1.html" title="Tesco Discount Barcodes, Cracked.">Tesco Discount Barcodes, Cracked</a></li><li class="page_item page-item-122"><a href="../../zappysearch/index.html" title="ZappySearch, a Firefox Plugin">ZappySearch</a></li></ul></li><li class="page_item page-item-104 page_item_has_children"><a href="../../../about/index.html">About</a><ul class='children'><li class="page_item page-item-384"><a href="../../../about/privacy-policy.1.html">Privacy Policy</a></li></ul></li><li class="page_item page-item-205"><a href="../../../contact/index.html" title="Matt Evans | Contact">Contact</a></li></ul></div>
-			  </nav><!-- #access -->
-			  <br style="clear:both;">
-			</div>
-
-	</header><!-- #branding -->
+    <meta property="og:title" content="2-D Polymer Bundle (Microcanonical Approach)" />
+<meta property="og:description" content="This is a microcanonical ensemble approach to a simple model of a two dimensional polymer bundle. The professor of the course I took does a lot of research in the area of polymer physics and so set a few problems pertaining to them. They aren’t easily found in textbooks or online either (this website notwithstanding) but are nevertheless quite interesting in themselves. We also approached this same problem from the canonical ensemble which I’ll upload soon." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/projects/physics-problems/polymer-bundle-2-d-microcanonical-approach/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-02-11T12:50:34+00:00" />
+<meta property="article:modified_time" content="2023-02-11T12:50:34+00:00" />
 
 
-	<div id="main">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<div id="primary" class="loner">
-		<ul id="breadcrumbul"><li id="breadcrumb_navigation_widget-2" class="widget crumbs"><h2 class="widgettitle"></h2>
-
-<ul><li><a href="../../../index.html" title="Home">Home</a><span>-></span> </li><li class="page_item lvl1"><a href="../../index.html" title="Projects">Projects</a><span>-></span></li><li class="page_item lvl2"><a href="../index.html" title="Physics Problems">Physics Problems</a><span>-></span></li><li class="page_item lvl3 current_page_item"><a href="../polymer-bundle-2-d-microcanonical-approach.1.html" title="2-D Polymer Bundle (Microcanonical Approach)">2-D Polymer Bundle (Microcanonical Approach)</a></li>
-</ul></li>
-</ul>			<div id="content" role="main">
-
-				
-					
-	<article id="post-323" class="post-323 page type-page status-publish hentry">
-		<header class="entry-header">
-						<h1 class="entry-title"><a href="../polymer-bundle-2-d-microcanonical-approach.1.html" title="Permalink to 2-D Polymer Bundle (Microcanonical Approach)" rel="bookmark">2-D Polymer Bundle (Microcanonical Approach)</a></h1>
-			
-			
-					</header><!-- .entry-header -->
-
-				<div class="entry-content">
-			<p>This is a microcanonical ensemble approach to a simple model of a two dimensional polymer bundle. The professor of the course I took does a lot of research in the area of polymer physics and so set a few problems pertaining to them. They aren&#8217;t easily found in textbooks or online either (this website notwithstanding) but are nevertheless quite interesting in themselves. We also approached this same problem from the canonical ensemble which I&#8217;ll upload soon.</p>
-<h3>Question</h3>
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">2-D Polymer Bundle (Microcanonical Approach)</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 11, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics-problems/">physics-problems</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>This is a microcanonical ensemble approach to a simple model of a two dimensional polymer bundle. The professor of the course I took does a lot of research in the area of polymer physics and so set a few problems pertaining to them. They aren’t easily found in textbooks or online either (this website notwithstanding) but are nevertheless quite interesting in themselves. We also approached this same problem from the canonical ensemble which I’ll upload soon.</p>
+<h2 id="question">Question</h2>
 <p>A polymer is represented by a chain of \(N\) segments of length \(a\). \(N_x^+\) segments are oriented in the positive \(x\)-direction \(N_x^-\) are oriented in the negative \(x\)-direction. \(N_y^+\) and \(N_y^-\) segments are oriented in the positive and negative \(y\)-direction, respectively.</p>
 <ol>
 <li>Assign an energy penalty \(\varepsilon\) for every polymer segment oriented in \(y\)-direction. This penalty reflects the confinement in a polymer bundle.</li>
@@ -116,178 +98,93 @@ body.custom-background { background-color: #FFFFFF; }
 <li>Set \(L_y=0\) in the following. Derive the mechanical equation of state for the force \(F_x(E,N,L_x)\) in the \(x\)-direction.</li>
 <li>Derive the thermal equation of state for the temperature \(T(E,N,L_x)\).</li>
 <li>Eliminate \(E/\varepsilon\) from the two equations of state and show that
-<p>\begin{equation}<br />
-  L_x(T,N,F_x)=aN\frac{\sinh(\frac{F_x a}{k_B T})}{\cosh(\frac{F_x a}{k_B T}) + \exp(\frac{-\varepsilon}{k_B T})}<br />
-\label{eq:lx}<br />
-\end{equation}
-  </li>
+\begin{equation}
+L_x(T,N,F_x)=aN\frac{\sinh(\frac{F_x a}{k_B T})}{\cosh(\frac{F_x a}{k_B T}) + \exp(\frac{-\varepsilon}{k_B T})}
+\label{eq:lx}
+\end{equation}</li>
 <li>Expand \(L_x\) for small force and extract the entropic spring constant.</li>
 </ol>
-<h3>Solution</h3>
-<h4>1. Energy Penalty</h4>
+<h2 id="solution">Solution</h2>
+<p><strong>1. Energy Penalty</strong></p>
 <p>To include an energy penalty for segments oriented in the \(y\)-direction, we simply write \(E=\varepsilon [N_y^++N_y^-]\).</p>
-<h4>2. Entropy</h4>
+<p><strong>2. Entropy</strong></p>
 <p>To calculate the entropy of the chain, we first need to deduce the number of states. In the one-dimensional case this is simply the result for the one-dimensional random walk: $$\Omega=\frac{N!}{N^+! N^-!}$$</p>
 <p>Extending this to two dimensions, we obtain</p>
-<p>\begin{equation}<br />
-  \Omega=\frac{N!}{N_x^+! N_x^-! N_y^+! N_y^-!}<br />
-  \label{eq:omega}<br />
+<p>\begin{equation}
+\Omega=\frac{N!}{N_x^+! N_x^-! N_y^+! N_y^-!}
+\label{eq:omega}
 \end{equation}</p>
-<p>We find the entropy using the well-known formula <script type="math/tex">S=k_B \ln \Omega</script> and applying Stirling&#8217;s approximation: $$S = k_B \left[ N\ln N - N_x^+ \ln N_x^+ - N_x^- \ln N_x^- - N_y^+ \ln N_y^+ - N_y^- \ln N_y^- \right]$$</p>
-<p>If we define <script type="math/tex">\rho_{x/y}^{\pm}=\frac{N_{x/y}^{\pm}}{N}</script>, we can write it a bit more succinctly:</p>
-<p>\begin{equation}<br />
-  S = -k_B N \left[ \rho_x^+ \ln \rho_x^+ + \rho_x^- \ln \rho_x^- + \rho_y^+ \ln \rho_y^+ + \rho_y^- \ln \rho_y^- \right]<br />
-  \label{eq:srho}<br />
+<p>We find the entropy using the well-known formula \(S=k_B \ln \Omega\) and applying Stirling’s approximation: $$S = k_B \left[ N\ln N - N_x^+ \ln N_x^+ - N_x^- \ln N_x^- - N_y^+ \ln N_y^+ - N_y^- \ln N_y^- \right]$$</p>
+<p>If we define \(\rho_{x/y}^{\pm}=\frac{N_{x/y}^{\pm}}{N}\), we can write it a bit more succinctly:</p>
+<p>\begin{equation}
+S = -k_B N \left[ \rho_x^+ \ln \rho_x^+ + \rho_x^- \ln \rho_x^- + \rho_y^+ \ln \rho_y^+ + \rho_y^- \ln \rho_y^- \right]
+\label{eq:srho}
 \end{equation}</p>
-<p>We set <script type="math/tex">L_y=0</script>. Now let us briefly take pause to define some variables for convenience:</p>
-<p>For convenience, \(\eta := \frac{E}{N \varepsilon}\), \(x:=\frac{L_x}{L_0}\), and \(L_0:=Na\), where \(L_0\) is the &#8220;stretched out&#8221; (i.e. \(N=N_x\)) length of the polymer.</p>
+<p>We set \(L_y=0\). Now let us briefly take pause to define some variables for convenience:</p>
+<p>For convenience, \(\eta := \frac{E}{N \varepsilon}\), \(x:=\frac{L_x}{L_0}\), and \(L_0:=Na\), where \(L_0\) is the “stretched out” (i.e. \(N=N_x\)) length of the polymer.</p>
 <p>We also note that the effective number of steps in the positive \(x\)-direction is the effective length over the segment length: \(N_x^+ -N_x^-=\frac{L_x}{a}\) and the same for \(y\): \(N_y^+ -N_y^-=\frac{L_y}{a}\).</p>
 <p>Combining these variables, it is possible to write \[\frac{N_x^{\pm}}{N}=\frac 12 \big[1-\eta \pm x\big]\]</p>
-<h4>3. Mechanical Equation of State</h4>
-<p>So, to the question. The equation for the force in the <script type="math/tex">x</script>-direction <script type="math/tex">F_x</script> is given by <script type="math/tex">\frac{-F_x}{T}=\frac{\partial S}{\partial L_x}</script>, so</p>
-<p>\begin{equation}<br />
-  \frac{-F_x}{T}=\frac{\partial S}{\partial L_x}=\frac{\partial S}{\partial x}\frac{\partial x}{\partial L_x}=\frac{1<br />
-}{L_0}\frac{\partial S}{\partial x}<br />
-  \label{eq:fx}<br />
+<p><strong>3. Mechanical Equation of State</strong></p>
+<p>So, to the question. The equation for the force in the \(x\)-direction \(F_x\) is given by \(\frac{-F_x}{T}=\frac{\partial S}{\partial L_x}\), so</p>
+<p>\begin{equation}
+\frac{-F_x}{T}=\frac{\partial S}{\partial L_x}=\frac{\partial S}{\partial x}\frac{\partial x}{\partial L_x}=\frac{1
+}{L_0}\frac{\partial S}{\partial x}
+\label{eq:fx}
 \end{equation}</p>
 <p>In order to find the derivative \(\frac{\partial S}{\partial x}\) we need to rewrite the entropy with the new constraint of \(L_y=0\).</p>
-<p>\begin{equation}<br />
-  \frac{S}{-k_B N} = \frac{1}{2} \left(1-\eta + x \right)\ln \left(1-\eta + x \right) + \frac{1}{2} \left(1- \eta &#8211; x \right)\ln \left(1-\eta &#8211; x \right) + 2 \left( \frac{\eta}{2} \right) \ln \left( \frac{\eta}{2} \right)<br />
-  \label{eq:news}<br />
+<p>\begin{equation}
+\frac{S}{-k_B N} = \frac{1}{2} \left(1-\eta + x \right)\ln \left(1-\eta + x \right) + \frac{1}{2} \left(1- \eta – x \right)\ln \left(1-\eta – x \right) + 2 \left( \frac{\eta}{2} \right) \ln \left( \frac{\eta}{2} \right)
+\label{eq:news}
 \end{equation}</p>
 <p>Taking the derivative for \(x\) then, we find $$\frac{\partial S}{\partial x}=-\frac{k_B N}{2} \ln \left[\frac{1-\eta + x}{1-\eta - x}\right]$$</p>
 <p>The mechanical equation of state for the force \(F_x\), found by rearranging \eqref{eq:fx} and using the result just obtained, is then:</p>
-<p>\begin{equation}<br />
-  F_x=\frac{k_B T}{2a} \ln \left[ \frac{1-\eta + \frac{L_x}{L_0}}{1-\eta - \frac{L_x}{L_0}} \right]<br />
-  \label{eq:fx2}<br />
+<p>\begin{equation}
+F_x=\frac{k_B T}{2a} \ln \left[ \frac{1-\eta + \frac{L_x}{L_0}}{1-\eta - \frac{L_x}{L_0}} \right]
+\label{eq:fx2}
 \end{equation}</p>
-<h4>4. Thermal Equation of State</h4>
+<p><strong>4. Thermal Equation of State</strong></p>
 <p>To obtain the thermal equation of state, we use the formula \( \frac 1T = \frac{\partial S}{\partial E} \)</p>
 <p>Using \eqref{eq:news}:</p>
-<p>$$\frac{2\varepsilon}{k_B T} = \ln \left[ \frac 12 (1-\eta + x) \right] + \ln \left[ \frac 12 (1-\eta - x) \right] -2 \ln \frac \eta 2$$</p>
+<p>\[\frac{2\varepsilon}{k_B T} = \ln \left[ \frac 12 (1-\eta + x) \right] + \ln \left[ \frac 12 (1-\eta - x) \right] -2 \ln \frac \eta 2\]</p>
 <p>which we can write much more neatly as:</p>
-<p>\begin{equation}<br />
-  \frac{2\varepsilon}{k_B T} = \ln \left( \frac{1-\eta + x}{\eta} \right) + \ln \left( \frac{1-\eta \, &#8211; \, x}{\eta} \right)<br />
-  \label{eq:dsde}<br />
+<p>\begin{equation}
+\frac{2\varepsilon}{k_B T} = \ln \left( \frac{1-\eta + x}{\eta} \right) + \ln \left( \frac{1-\eta , – , x}{\eta} \right)
+\label{eq:dsde}
 \end{equation}</p>
-<h4>5. Calculating the Extension</h4>
+<p><strong>5. Calculating the Extension</strong></p>
 <p>The equation we are to derive is quite an long process as the equations get somewhat bulky. In fact, the same result can be obtained much simpler (just a few lines) in the canonical ensemble approach to this problem. The steps here are only an outline as a guide.</p>
 <p>Start by solving \eqref{eq:fx2} for \(\eta\):</p>
-<p>\begin{equation}<br />
-  \eta=1-x·\coth\frac{F_x a}{k_B T}<br />
-  \label{eq:etacoth}<br />
+<p>\begin{equation}
+\eta=1-x·\coth\frac{F_x a}{k_B T}
+\label{eq:etacoth}
 \end{equation}</p>
 <p>If we now sub. this into equation \eqref{eq:dsde}:</p>
-<p>$$\frac{2 \varepsilon}{k_B T}=\ln \left[ \frac{\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right) +\frac{L_x}{Na}}{1-\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right)} \right] + \ln \left[ \frac{\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right) -\frac{L_x}{Na}}{1-\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right)} \right]$$</p>
+<p>\[\frac{2 \varepsilon}{k_B T}=\ln \left[ \frac{\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right) +\frac{L_x}{Na}}{1-\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right)} \right] + \ln \left[ \frac{\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right) -\frac{L_x}{Na}}{1-\frac{L_x}{Na}\coth\left(\frac{F_x a}{k_B T} \right)} \right]\]</p>
 <p>Simplifying and taking the exponent of both sides:</p>
-<p>$$e^{\frac{2 \varepsilon}{k_B T}}=\frac{\frac{L_x^2}{N^2 a^2} \coth^2 \left( \frac{F_x a}{k_B T} \right) &#8211; \frac{L_x^2}{N^2 a^2} }{ \left[ 1-\frac{L_x}{N a} \coth \left( \frac{F_x a}{k_B T} \right) \right]^2}$$</p>
+<p>\[e^{\frac{2 \varepsilon}{k_B T}}=\frac{\frac{L_x^2}{N^2 a^2} \coth^2 \left( \frac{F_x a}{k_B T} \right) – \frac{L_x^2}{N^2 a^2} }{ \left[ 1-\frac{L_x}{N a} \coth \left( \frac{F_x a}{k_B T} \right) \right]^2}\]</p>
 <p>Using that \(\coth^2(x)-1=\frac{1}{\sinh^2(x)}\):</p>
-<p>$$e^{\frac{\varepsilon}{k_B T}}=\frac{\frac{L_x}{N a} \sqrt{\coth^2 \left(\frac{F_x a}{k_B T}\right) -1}}{1-\frac{L_x}{N a} \coth \left( \frac{F_x a}{k_B T} \right)}$$</p>
+<p>\[e^{\frac{\varepsilon}{k_B T}}=\frac{\frac{L_x}{N a} \sqrt{\coth^2 \left(\frac{F_x a}{k_B T}\right) -1}}{1-\frac{L_x}{N a} \coth \left( \frac{F_x a}{k_B T} \right)}\]</p>
 <p>Finally, we solve for \(L_x\):</p>
-<p>\begin{equation}<br />
-  \frac{L_x}{Na}=\frac{\sinh(\frac{F_x a}{k_B T})}{\cosh(\frac{F_x a}{k_B T}) + \exp(\frac{-\varepsilon}{k_B T})}<br />
-  \label{eq:finally}<br />
+<p>\begin{equation}
+\frac{L_x}{Na}=\frac{\sinh(\frac{F_x a}{k_B T})}{\cosh(\frac{F_x a}{k_B T}) + \exp(\frac{-\varepsilon}{k_B T})}
+\label{eq:finally}
 \end{equation}</p>
 <p>which is the equation \eqref{eq:lx} given.</p>
-<h4>6. Extracting the Entropic Spring Constant</h4>
+<p><strong>6. Extracting the Entropic Spring Constant</strong></p>
 <p>We need to take the limit of \eqref{eq:lx} for small force. For small \(x\): \(\sinh(x) \to x\) and \(\cosh(x) \to 1\).</p>
-<p>Therefore \(L_x\) becomes $$L_x \approx aN \frac{\left(\frac{F_x a}{k_B T}\right)}{1+\exp \left(\frac{-\varepsilon}{k_B T}\right)}$$</p>
+<p>Therefore \(L_x\) becomes</p>
+<p>\[L_x \approx aN \frac{\left(\frac{F_x a}{k_B T}\right)}{1+\exp \left(\frac{-\varepsilon}{k_B T}\right)}\]</p>
 <p>If we re-arrange for \(F_x\):</p>
-<p>$$F_x=\frac{k_B T}{a^2N}\left[1+\exp \left(\frac{-\varepsilon}{k_B T}\right) \right] L_x$$</p>
-<p>And compare it with Hooke&#8217;s Law \(F=-kx\):</p>
-<p>$$k_{\text{entropy}}=\frac{k_B T}{a^2N}\left[1+\exp \left(\frac{-\varepsilon}{k_B T}\right) \right]$$</p>
-					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-						
-			
-					</footer><!-- #entry-meta -->
-	</article><!-- #post-323 -->
+<p>\[F_x=\frac{k_B T}{a^2N}\left[1+\exp \left(\frac{-\varepsilon}{k_B T}\right) \right] L_x\]</p>
+<p>And compare it with Hooke’s Law \(F=-kx\):</p>
+<p>\[k_{\text{entropy}}=\frac{k_B T}{a^2N}\left[1+\exp \left(\frac{-\varepsilon}{k_B T}\right) \right].\]</p>
 
-						<div id="comments">
-	
-	
-	
-			
-</div><!-- #comments -->
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
 
-				
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-
-		<div id="secondary" class="widget-area" role="complementary">
-			<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" action="../../../index.html">
-		<label for="s" class="assistive-text">Search</label>
-		<input type="text" class="field" name="s" id="s" placeholder="Search" />
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
-	</form>
-</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Me</h3>			<div class="textwidget"><p>Hello and welcome! I'm Matt Evans, a Physics student at the University of Manchester with an unhealthy interest in technology, software, security, and the web.</p>
-<p>I don't hang out here <em>too</em> much at the moment, but <a href="../../index.html" title="A list of the projects I'm currently involved with">any projects</a> I'm working on are kept up to date - both Physics- and web-related.</p>
-</div>
-		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
-	<li class="cat-item cat-item-17"><a href="../../../category/general/index.html" title="Posts which don&#039;t fit into any other category">General</a>
-</li>
-	<li class="cat-item cat-item-21"><a href="../../../category/physics/index.html" title="View all posts filed under Physics">Physics</a>
-</li>
-	<li class="cat-item cat-item-28"><a href="../../../category/security/index.html" title="View all posts filed under Security">Security</a>
-</li>
-	<li class="cat-item cat-item-11"><a href="../../../category/technology/index.html" title="My thoughts on and experience in the world of technology.">Technology</a>
-</li>
-	<li class="cat-item cat-item-22"><a href="../../../category/web/index.html" title="View all posts filed under Web">Web</a>
-</li>
-		</ul>
-</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='../../../tag/about-me/index.html' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>About Me</a>
-<a href='../../../tag/cakephp/index.html' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>CakePHP</a>
-<a href='../../../tag/javascript/index.html' class='tag-link-27' title='3 topics' style='font-size: 15.636363636364pt;'>JavaScript</a>
-<a href='../../../tag/particle-physics/index.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>particle physics</a>
-<a href='../../../tag/passwords/index.html' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>passwords</a>
-<a href='../../../tag/physics/index.html' class='tag-link-21' title='6 topics' style='font-size: 22pt;'>Physics</a>
-<a href='../../../tag/search/index.html' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>search</a>
-<a href='../../../tag/security-2/index.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>security</a>
-<a href='../../../tag/solved-problems/index.html' class='tag-link-16' title='2 topics' style='font-size: 12.581818181818pt;'>solved problems</a>
-<a href='../../../tag/tutorial/index.html' class='tag-link-24' title='2 topics' style='font-size: 12.581818181818pt;'>Tutorial</a>
-<a href='../../../tag/virtualbox/index.html' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>VirtualBox</a>
-<a href='../../../tag/virtualization/index.html' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>Virtualization</a>
-<a href='../../../tag/web-development/index.html' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Web Development</a>
-<a href='../../../tag/welcome/index.html' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>welcome</a>
-<a href='../../../tag/wordpress/index.html' class='tag-link-8' title='2 topics' style='font-size: 12.581818181818pt;'>Wordpress</a></div>
-</aside>		</div><!-- #secondary .widget-area -->
-
-	</div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo">
-
-			
-
-      <div id="copyrightinfo">
-        &copy; Copyright Matt Evans 2014 - <a href="../../../about/privacy-policy.1.html" title="How I protect you and your data.">Privacy</a>
-      </div>
-		  <div id="social_icons">
-		    <a href="https://www.facebook.com/mtdevans" title="Find me on Facebook" class="fb"></a>
-		    <a href="https://twitter.com/mtdevans" title="Follow me on Twitter" class="tt"></a>
-		    <a href="https://plus.google.com/105749333960895048875/?rel=author" title="Circle me on Plus" class="plus"></a>
-		    <a href="https://www.linkedin.com/mtdevans" title="Connect with me on LinkedIn" class="li"></a>
-		  </div>
-			<div id="site-generator">
-								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-			</div>
-			<br class="clear">
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});</script>
-
-<script type='text/javascript' src='../../.././wp-includes/js/comment-reply.min.js@ver=3.9.13'></script>
-
-</body>
+    </main>
+  </body>
 </html>
-
-<!-- Dynamic page generated in 0.095 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-07-26 03:02:39 -->
-
-<!-- Compression = gzip -->
-<!-- super cache -->

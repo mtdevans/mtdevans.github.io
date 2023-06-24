@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Matt Evans</title>
+    <link>https://mtdevans.com/tags/javascript/</link>
+    <description>Recent content in JavaScript on Matt Evans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 10 Jul 2013 13:05:23 +0000</lastBuildDate><atom:link href="https://mtdevans.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solving the Schrödinger Equation with Numerov&#39;s Algorithm</title>
+      <link>https://mtdevans.com/posts/solving-the-schrodinger-equation-with-numerovs-algorithm/</link>
+      <pubDate>Wed, 10 Jul 2013 13:05:23 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/solving-the-schrodinger-equation-with-numerovs-algorithm/</guid>
+      <description>&lt;p&gt;The Schrödinger equation describes the energy and time-evolution of a particle or system of particles, and is one of the fundamental building blocks of modern physics. In it’s general form, the (time-independent) Schrödinger equation for a one-dimensional harmonic oscillator reads thus:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\label{eq:sch}
+\frac{-\hbar^2}{2m} \frac{\partial^2}{\partial z^2}\psi(z) + \frac{mz^2}{2} \psi(z) = E\psi(z)
+\end{equation}&lt;/p&gt;
+&lt;p&gt;There are relatively few situations in which the Schrödinger equation can be solved analytically, and numerical methods and approximations are one way around that analytical limitation. To demonstrate how this is possible and how a numerical solution works, what better way than to solve a system which &lt;strong&gt;can&lt;/strong&gt; be solved analytically and comparing the results.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fourth Order Runge Kutta Algorithm in Javascript With Demo</title>
+      <link>https://mtdevans.com/posts/fourth-order-runge-kutta-algorithm-in-javascript-with-demo/</link>
+      <pubDate>Thu, 02 May 2013 18:08:37 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/fourth-order-runge-kutta-algorithm-in-javascript-with-demo/</guid>
+      <description>&lt;p&gt;The general Runge-Kutta algorithm is one of a few algorithms for solving first order ordinary differential equations. Below is a specific implementation for solving &lt;a href=&#34;https://en.wikipedia.org/wiki/Equation_of_motion&#34;&gt;equations of motion&lt;/a&gt; and other second order ordinary differential equations (ODEs) for Physics simulations, amongst other things.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Physics Bungee Rope Cursor Trailer</title>
+      <link>https://mtdevans.com/posts/physics-bungee-rope-cursor-trailer/</link>
+      <pubDate>Sat, 13 Apr 2013 17:44:01 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/physics-bungee-rope-cursor-trailer/</guid>
+      <description>I’m getting ready for starting a course in computational physics, and so, ignoring the fact I’m meant to be revising for an exam this Monday, I thought I’d prepare for the more exciting of the two. I’ve always wanted to code this little physics model ever since I saw it on one of those JavaScript snippet websites back when dial-up was fast and people downloaded mp3s one at a time. Those were the days.</description>
+    </item>
+    
+  </channel>
+</rss>

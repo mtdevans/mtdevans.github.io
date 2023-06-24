@@ -1,241 +1,153 @@
-<!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="en-US">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Diesel Cycle Efficiency | Matt Evans</title>
-<link rel="shortcut icon" href="https://mtdevans.com/favicon.ico" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
-<link rel="pingback" href="https://mtdevans.com/xmlrpc.php" />
-<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-<!--[if lt IE 9]>
-<script src="https://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
-<link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtdevans.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='2-D Polymer Bundle (Microcanonical Approach)' href='../polymer-bundle-2-d-microcanonical-approach.1.html' />
-<link rel='next' title='Reverse Carnot Cycle Efficiency' href='../reverse-carnot-cycle-efficiency.1.html' />
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>Diesel Cycle Efficiency // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
 
-<link rel='shortlink' href='../../../index.html@p=345.html' />
-		<style type="text/css">
-						ol.footnotes li {list-style-type:decimal;}
-						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
-		
-<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
-<link rel="author" href="http://105749333960895048875/" />
-<meta name="description" content="Deriving the efficiency of the idealized Diesel cycle in terms of the heat capacities and the compression ratios." />
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Diesel Cycle Efficiency"/>
+<meta name="twitter:description" content="The Diesel cycle is the thermodynamic cycle which approximates the pressure and volume of the combustion chamber in a Diesel engine. In the Diesel cycle, the working medium in the combustion chamber is
+compressed adiabatically from \(V_1\), \(p_1\) to \(V_2\) &lt; \(V_1\), \(p_2\) &gt; \(p_1\), expanded isobarically at \(p_2\) from \(V_2\) to \(V_3\) &gt; \(V_2\), expanded adiabatically from \(V_3\), \(p_2\) to \(V_1\) and \(p_4\) &gt; \(p_1\), cooled isochorically at \(V_1\) from \(p_4\) to the initial pressure \(p_1\)."/>
 
-<meta name="keywords" content="diesel,cycle,efficiency,derive,physics,worked,solutions,matt evans,mtdevans,tesco,barcode" />
-
-<link rel="canonical" href="../diesel-cycle-efficiency.1.html" />
-<!-- /all in one seo pack -->
-<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #FFFFFF; }
-</style>
-<style type="text/css" id="syntaxhighlighteranchor"></style>
-
-            <script type="text/javascript">//<![CDATA[
-            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-33092385-2']);
-					_gaq.push(['_trackPageLoadTime']);
-            _gaq.push(['_trackPageview']);
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-            //]]></script>
-			</head>
-
-<body class="page page-id-345 page-child parent-pageid-223 page-template-default custom-background single-author singular two-column right-sidebar">
-<div id="page" class="hfeed">
-	<header id="branding" role="banner">
-	    <div id="hdfltcont">
-			  <hgroup>
-				  <h1 id="site-title"><span><a href="../../../index.html" title="Matt Evans" rel="home">Matt Evans</a></span></h1>
-				  <h2 id="site-description">(( Physics, Security, Web ))</h2>
-			  </hgroup>
-			  <nav id="access" role="navigation">
-				  <h3 class="assistive-text">Main menu</h3>
-				  				  <div class="skip-link"><a class="assistive-text" href="../diesel-cycle-efficiency.1.html#content" title="Skip to primary content">Skip to primary content</a></div>
-				  <div class="skip-link"><a class="assistive-text" href="../diesel-cycle-efficiency.1.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-				  				  <div class="menu"><ul><li ><a href="../../../index.html">Home</a></li><li class="page_item page-item-106 page_item_has_children current_page_ancestor"><a href="../../index.html">Projects</a><ul class='children'><li class="page_item page-item-223 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html" title="Matt Evans | Solutions to Some Common Physics Problems">Physics Problems</a><ul class='children'><li class="page_item page-item-323"><a href="../polymer-bundle-2-d-microcanonical-approach.1.html" title="2-Dimensional Polymer Bundle (Microcanonical) | Matt Evans">2-D Polymer Bundle (Microcanonical Approach)</a></li><li class="page_item page-item-286"><a href="../absorption-of-molecules-onto-a-surface.1.html">Adsorption of Molecules onto a Surface</a></li><li class="page_item page-item-226"><a href="../deriving-stirlings-formula.1.html" title="Matt Evans | Physics Problems | Deriving Stirling's Formula">Deriving Stirling&#8217;s Formula</a></li><li class="page_item page-item-373"><a href="../diatomic-molecule-as-rigid-rotor/index.html">Diatomic Molecule as Rigid Rotor</a></li><li class="page_item page-item-345 current_page_item"><a href="../diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency | Matt Evans">Diesel Cycle Efficiency</a></li><li class="page_item page-item-280"><a href="../exchange-of-particles-between-subsystems.1.html">Exchange of Particles Between Subsystems</a></li><li class="page_item page-item-500"><a href="../fixed-target-vs-collider-experiments-with-discussion/index.html">Fixed Target vs Collider Experiments (with discussion)</a></li><li class="page_item page-item-525"><a href="../interactions-of-charged-particles-with-matter/index.html">Interactions of Charged Particles with Matter</a></li><li class="page_item page-item-490"><a href="../mandelstam-variables-with-identical-particles/index.html">Mandelstam Variables with Identical Particles</a></li><li class="page_item page-item-288"><a href="../maxwell-relations.1.html">Maxwell Relations</a></li><li class="page_item page-item-319"><a href="../mixture-of-two-ideal-gases-microcanonical-approach.1.html" title="Mixture of Two Ideal Gases (Microcanonical) | Matt Evans">Mixture of Two Ideal Gases</a></li><li class="page_item page-item-228"><a href="../particle-in-a-one-dimensional-box.1.html" title="Matt Evans | Physics Problems | Particle in 1-D Box">Particle in a one-dimensional box</a></li><li class="page_item page-item-230"><a href="../random-walk-of-two-drunks.1.html" title="Matt Evans | Physics Problems | Random Walk of Two Drunks">Random Walk of Two Drunks</a></li><li class="page_item page-item-356"><a href="../reverse-carnot-cycle-efficiency.1.html" title="Matt Evans | Efficiency of the Reverse Carnot Cycle">Reverse Carnot Cycle Efficiency</a></li><li class="page_item page-item-233"><a href="../system-of-n-harmonic-oscillators.1.html" title="Microcanonical System N Harmonic Oscillators | Matt Evans">System of N Harmonic Oscillators</a></li></ul></li><li class="page_item page-item-149"><a href="../../barcode.1.html" title="Tesco Discount Barcodes, Cracked.">Tesco Discount Barcodes, Cracked</a></li><li class="page_item page-item-122"><a href="../../zappysearch/index.html" title="ZappySearch, a Firefox Plugin">ZappySearch</a></li></ul></li><li class="page_item page-item-104 page_item_has_children"><a href="../../../about/index.html">About</a><ul class='children'><li class="page_item page-item-384"><a href="../../../about/privacy-policy.1.html">Privacy Policy</a></li></ul></li><li class="page_item page-item-205"><a href="../../../contact/index.html" title="Matt Evans | Contact">Contact</a></li></ul></div>
-			  </nav><!-- #access -->
-			  <br style="clear:both;">
-			</div>
-
-	</header><!-- #branding -->
+    <meta property="og:title" content="Diesel Cycle Efficiency" />
+<meta property="og:description" content="The Diesel cycle is the thermodynamic cycle which approximates the pressure and volume of the combustion chamber in a Diesel engine. In the Diesel cycle, the working medium in the combustion chamber is
+compressed adiabatically from \(V_1\), \(p_1\) to \(V_2\) &lt; \(V_1\), \(p_2\) &gt; \(p_1\), expanded isobarically at \(p_2\) from \(V_2\) to \(V_3\) &gt; \(V_2\), expanded adiabatically from \(V_3\), \(p_2\) to \(V_1\) and \(p_4\) &gt; \(p_1\), cooled isochorically at \(V_1\) from \(p_4\) to the initial pressure \(p_1\)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/projects/physics-problems/diesel-cycle-efficiency/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-02-11T13:57:17+00:00" />
+<meta property="article:modified_time" content="2023-02-11T13:57:17+00:00" />
 
 
-	<div id="main">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<div id="primary" class="loner">
-		<ul id="breadcrumbul"><li id="breadcrumb_navigation_widget-2" class="widget crumbs"><h2 class="widgettitle"></h2>
-
-<ul><li><a href="../../../index.html" title="Home">Home</a><span>-></span> </li><li class="page_item lvl1"><a href="../../index.html" title="Projects">Projects</a><span>-></span></li><li class="page_item lvl2"><a href="../index.html" title="Physics Problems">Physics Problems</a><span>-></span></li><li class="page_item lvl3 current_page_item"><a href="../diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency">Diesel Cycle Efficiency</a></li>
-</ul></li>
-</ul>			<div id="content" role="main">
-
-				
-					
-	<article id="post-345" class="post-345 page type-page status-publish hentry">
-		<header class="entry-header">
-						<h1 class="entry-title"><a href="../diesel-cycle-efficiency.1.html" title="Permalink to Diesel Cycle Efficiency" rel="bookmark">Diesel Cycle Efficiency</a></h1>
-			
-			
-					</header><!-- .entry-header -->
-
-				<div class="entry-content">
-			<div id="attachment_346" style="width: 270px" class="wp-caption alignright"><a href="https://mtdevans.com/wp-content/uploads/2013/01/figdieselIdeal_web.jpg" ><img src="https://mtdevans.com/wp-content/uploads/2013/01/figdieselIdeal_web.jpg" alt="P-V Diagram for idealized Diesel cycle" title="Ideal Diesel Cycle" width="260" height="175" class="size-full wp-image-346" /></a><p class="wp-caption-text">Figure 1. P-V Diagram for the ideal Diesel cycle.</p></div>
-<p>The <a href="http://en.wikipedia.org/wiki/Diesel_cycle" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Diesel_cycle']);" title="For a general discussion, see the article on Wikipedia">Diesel cycle</a> is the thermodynamic cycle which approximates the pressure and volume of the combustion chamber in a Diesel engine. In the Diesel cycle, the working medium in the combustion chamber is</p>
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Diesel Cycle Efficiency</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 11, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics-problems/">physics-problems</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>The <a href="https://en.wikipedia.org/wiki/Diesel_cycle">Diesel cycle</a> is the thermodynamic cycle which approximates the pressure and volume of the combustion chamber in a Diesel engine. In the Diesel cycle, the working medium in the combustion chamber is</p>
 <ol>
-<li>compressed adiabatically from V<sub>1</sub>, p<sub>1</sub> to V<sub>2</sub> &lt; V<sub>1</sub>, p<sub>2</sub> &gt; p<sub>1</sub>,</li>
-<li>expanded isobarically at p<sub>2</sub> from V<sub>2</sub> to V<sub>3</sub> &gt; V<sub>2</sub>,</li>
-<li>expanded adiabatically from V<sub>3</sub>, p<sub>2</sub> to V<sub>1</sub> and p<sub>4</sub> &gt; p<sub>1</sub>,</li>
-<li>cooled isochorically at V<sub>1</sub> from p<sub>4</sub> to the initial pressure p<sub>1</sub>.</li>
+<li>compressed adiabatically from \(V_1\), \(p_1\) to \(V_2\) &lt; \(V_1\), \(p_2\) &gt; \(p_1\),</li>
+<li>expanded isobarically at \(p_2\) from \(V_2\) to \(V_3\) &gt; \(V_2\),</li>
+<li>expanded adiabatically from \(V_3\), \(p_2\) to \(V_1\) and \(p_4\) &gt; \(p_1\),</li>
+<li>cooled isochorically at \(V_1\) from \(p_4\) to the initial pressure \(p_1\).</li>
 </ol>
 <p>The heat absorbed by the medium is given by \(Q=\int_{2 \rightarrow 3} C_p dT\). Assuming the working medium is an ideal monatomic gas, show that the efficiency of the Diesel cycle can be written in the form</p>
 <p>\[ \eta = 1 - \gamma^{-1} {R_{31}^{\gamma} - R_{21}^{\gamma} \over R_{31} - R_{21}} \]</p>
-<h3>Efficiency of the Diesel Cycle</h3>
+<figure><img src="/stuff/figdieselIdeal_web.jpeg"
+         alt="P-V Diagram for idealized Diesel cycle."/><figcaption>
+            <p>P-V Diagram for idealized Diesel cycle.</p>
+        </figcaption>
+</figure>
+
+<p><strong>Efficiency of the Diesel Cycle</strong></p>
 <p>Because the process \(1 \rightarrow 2\) and \(3 \rightarrow 4\) are adiabatic, heat is not lost during those processes, so the efficiency can therefore be written in terms of the heat gained and lost, \(Q_H\) and \(Q_L\), as indicated on the diagram.</p>
 <p>From the equation given above we can say that the heat gained \(Q_H\) is given in terms of specific heat and temperature by:</p>
-<p>\begin{equation}<br />
-  Q_H = C_p (T_3 &#8211; T_2)<br />
-  \label{eq:q1}<br />
-\end{equation}<br />
-We can likewise deduce the heat lost as \(Q=\int_{4 \rightarrow 1} C_V dT\) such that<br />
-\begin{equation}<br />
-  Q_L = C_V (T_1 &#8211; T_4)<br />
-  \label{eq:q2}<br />
+<p>\begin{equation}
+Q_H = C_p (T_3 – T_2)
+\label{eq:q1}
 \end{equation}</p>
-<p>The thermal efficiency is defined as<sup><a href="../diesel-cycle-efficiency.1.html#footnote_0_345" id="identifier_0_345" class="footnote-link footnote-identifier-link" title="http://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node26.html" >1</a></sup> \(\eta={Q_H+Q_L \over Q_H}\), which we can express using \eqref{eq:q1} and \eqref{eq:q2} in the form of specific heats and temperatures \begin{equation} \eta=1+{C_V(T_1-T_4) \over C_p(T_3-T_2)} \label{eq:etaq1q2} \end{equation}</p>
+<p>We can likewise deduce the heat lost as \(Q=\int_{4 \rightarrow 1} C_V dT\) such that</p>
+<p>\begin{equation}
+Q_L = C_V (T_1 – T_4)
+\label{eq:q2}
+\end{equation}</p>
+<p>The thermal efficiency is defined as<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> \(\eta={Q_H+Q_L \over Q_H}\), which we can express using \eqref{eq:q1} and \eqref{eq:q2} in the form of specific heats and temperatures \begin{equation} \eta=1+{C_V(T_1-T_4) \over C_p(T_3-T_2)} \label{eq:etaq1q2} \end{equation}</p>
 <p>Using the ideal gas law \(PV=nRT\) where the \(n\)s and \(R\)s cancel, and the adiabatic index \(\gamma = {C_p \over C_V}\) we can further write</p>
 <p>\[\eta = 1 + \gamma^{-1} {P_1 V_1 - P_4 V_4 \over P_3 V_3 - P_2 V_2}\]</p>
-<p>From the diagram it can be seen that the volume V is the same in state 4 as in 1, i.e. V<sub>4</sub>=V<sub>1</sub>. Likewise for pressure, P<sub>3</sub>=P<sub>2</sub>. Therefore we can reduce our number of variables so that</p>
+<p>From the diagram it can be seen that the volume V is the same in state 4 as in 1, i.e. \(V_4=V_1\). Likewise for pressure, \(P_3=P_2\). Therefore we can reduce our number of variables so that</p>
 <p>\[\eta = 1 + \gamma^{-1} {V_1(P_1 - P_4) \over P_3(V_3-V_2)}\]</p>
-<p>Dividing the fraction through by P<sub>3</sub>V<sub>1</sub>:</p>
+<p>Dividing the fraction through by \(P_3V_1\):</p>
 <p>\[\eta = 1+\gamma^{-1} {\frac{P_1}{P_3} - \frac{P_4}{P_3} \over R_{31} - R_{21}}\]</p>
 <p>where \(R_{31} := \frac{V_3}{V_1}\) and \(R_{21} := \frac{V_2}{V_1}\).</p>
 <p>For an adiabatic expansion, \(PV^{\gamma}\) is constant. Exploiting this fact, we can see from the diagram that the following relations hold:</p>
-<p>\begin{eqnarray}<br />
- \frac{P_1}{P_3}&#038;=&#038;\left( {V_2 \over V_1} \right)^{\gamma} &#038;=&#038; R_{21}^{\gamma} \nonumber \\<br />
- \frac{P_4}{P_3}&#038;=&#038;\left( {V_3 \over V_1} \right)^{\gamma} &#038;=&#038; R_{31}^{\gamma} \nonumber<br />
+<p>\begin{eqnarray}
+\frac{P_1}{P_3}&amp;=&amp;\left( {V_2 \over V_1} \right)^{\gamma} &amp;=&amp; R_{21}^{\gamma} \nonumber \\
+\frac{P_4}{P_3}&amp;=&amp;\left( {V_3 \over V_1} \right)^{\gamma} &amp;=&amp; R_{31}^{\gamma} \nonumber
 \end{eqnarray}</p>
 <p>Finally, putting these back in and playing with minus signs:</p>
-<p>\[ \eta = 1 - \gamma^{-1} {R_{31}^{\gamma} - R_{21}^{\gamma} \over R_{31} - R_{21}} \; \blacksquare \]</p>
-<ol class="footnotes"><li id="footnote_0_345" class="footnote"><a href="http://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node26.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node26.html']);" title="See MITs brief page about the Diesel cycle. It's also whence I nicked my diagram">http://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node26.html</a> [<a href="../diesel-cycle-efficiency.1.html#identifier_0_345" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-						
-			
-					</footer><!-- #entry-meta -->
-	</article><!-- #post-345 -->
-
-						<div id="comments">
-	
-	
-	
-			
-</div><!-- #comments -->
-
-				
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-
-		<div id="secondary" class="widget-area" role="complementary">
-			<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" action="../../../index.html">
-		<label for="s" class="assistive-text">Search</label>
-		<input type="text" class="field" name="s" id="s" placeholder="Search" />
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
-	</form>
-</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Me</h3>			<div class="textwidget"><p>Hello and welcome! I'm Matt Evans, a Physics student at the University of Manchester with an unhealthy interest in technology, software, security, and the web.</p>
-<p>I don't hang out here <em>too</em> much at the moment, but <a href="../../index.html" title="A list of the projects I'm currently involved with">any projects</a> I'm working on are kept up to date - both Physics- and web-related.</p>
+<p>\[ \eta = 1 - \gamma^{-1} {R_{31}^{\gamma} - R_{21}^{\gamma} \over R_{31} - R_{21}} ; \blacksquare \]</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See <a href="https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node26.html">MIT&rsquo;s brief page about the Diesel cycle</a>. It&rsquo;s also whence I nicked my diagram.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
 </div>
-		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
-	<li class="cat-item cat-item-17"><a href="../../../category/general/index.html" title="Posts which don&#039;t fit into any other category">General</a>
-</li>
-	<li class="cat-item cat-item-21"><a href="../../../category/physics/index.html" title="View all posts filed under Physics">Physics</a>
-</li>
-	<li class="cat-item cat-item-28"><a href="../../../category/security/index.html" title="View all posts filed under Security">Security</a>
-</li>
-	<li class="cat-item cat-item-11"><a href="../../../category/technology/index.html" title="My thoughts on and experience in the world of technology.">Technology</a>
-</li>
-	<li class="cat-item cat-item-22"><a href="../../../category/web/index.html" title="View all posts filed under Web">Web</a>
-</li>
-		</ul>
-</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='../../../tag/about-me/index.html' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>About Me</a>
-<a href='../../../tag/cakephp/index.html' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>CakePHP</a>
-<a href='../../../tag/javascript/index.html' class='tag-link-27' title='3 topics' style='font-size: 15.636363636364pt;'>JavaScript</a>
-<a href='../../../tag/particle-physics/index.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>particle physics</a>
-<a href='../../../tag/passwords/index.html' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>passwords</a>
-<a href='../../../tag/physics/index.html' class='tag-link-21' title='6 topics' style='font-size: 22pt;'>Physics</a>
-<a href='../../../tag/search/index.html' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>search</a>
-<a href='../../../tag/security-2/index.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>security</a>
-<a href='../../../tag/solved-problems/index.html' class='tag-link-16' title='2 topics' style='font-size: 12.581818181818pt;'>solved problems</a>
-<a href='../../../tag/tutorial/index.html' class='tag-link-24' title='2 topics' style='font-size: 12.581818181818pt;'>Tutorial</a>
-<a href='../../../tag/virtualbox/index.html' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>VirtualBox</a>
-<a href='../../../tag/virtualization/index.html' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>Virtualization</a>
-<a href='../../../tag/web-development/index.html' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Web Development</a>
-<a href='../../../tag/welcome/index.html' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>welcome</a>
-<a href='../../../tag/wordpress/index.html' class='tag-link-8' title='2 topics' style='font-size: 12.581818181818pt;'>Wordpress</a></div>
-</aside>		</div><!-- #secondary .widget-area -->
 
-	</div><!-- #main -->
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
 
-	<footer id="colophon" role="contentinfo">
-
-			
-
-      <div id="copyrightinfo">
-        &copy; Copyright Matt Evans 2014 - <a href="../../../about/privacy-policy.1.html" title="How I protect you and your data.">Privacy</a>
-      </div>
-		  <div id="social_icons">
-		    <a href="https://www.facebook.com/mtdevans" title="Find me on Facebook" class="fb"></a>
-		    <a href="https://twitter.com/mtdevans" title="Follow me on Twitter" class="tt"></a>
-		    <a href="https://plus.google.com/105749333960895048875/?rel=author" title="Circle me on Plus" class="plus"></a>
-		    <a href="https://www.linkedin.com/mtdevans" title="Connect with me on LinkedIn" class="li"></a>
-		  </div>
-			<div id="site-generator">
-								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-			</div>
-			<br class="clear">
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});</script>
-
-<script type='text/javascript' src='../../.././wp-includes/js/comment-reply.min.js@ver=3.9.13'></script>
-
-</body>
+    </main>
+  </body>
 </html>
-
-<!-- Dynamic page generated in 0.087 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-07-26 03:02:40 -->
-
-<!-- Compression = gzip -->
-<!-- super cache -->

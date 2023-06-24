@@ -1,229 +1,144 @@
-<!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="en-US">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Reverse Carnot Cycle Efficiency | Matt Evans</title>
-<link rel="shortcut icon" href="https://mtdevans.com/favicon.ico" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="../../.././wp-content/themes/twentyeleven-child/style.css" />
-<link rel="pingback" href="https://mtdevans.com/xmlrpc.php" />
-<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-<!--[if lt IE 9]>
-<script src="https://mtdevans.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Feed" href="../../../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Matt Evans &raquo; Comments Feed" href="../../../comments/feed/index.html" />
-<link rel='stylesheet' id='amr_breadcrumb-css'  href='../../.././wp-content/plugins/breadcrumb-navigation-widget/breadcrumbnoimage.css@ver=3.9.13.css' type='text/css' media='all' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtdevans.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../.././wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Diesel Cycle Efficiency' href='../diesel-cycle-efficiency.1.html' />
-<link rel='next' title='Diatomic Molecule as Rigid Rotor' href='../diatomic-molecule-as-rigid-rotor/index.html' />
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>Reverse Carnot Cycle Efficiency // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
 
-<link rel='shortlink' href='../../../index.html@p=356.html' />
-		<style type="text/css">
-						ol.footnotes li {list-style-type:decimal;}
-						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
-		
-<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
-<link rel="author" href="http://105749333960895048875/" />
-<meta name="description" content="The efficiency of the reverse Carnot cycle, or Carnot refrigerator, can be deduced from looking at the relevant P-V and T-S diagrams as shown." />
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reverse Carnot Cycle Efficiency"/>
+<meta name="twitter:description" content="An air conditioning device is working on a reverse Carnot cycle between the inside of a room at temperature \(T_2\) and the outside at temperature \(T_1\) &gt; \(T_2\) with a monatomic ideal gas as the working medium. The air conditioner consumes the electrical power P. Heat leaks into the house according to the law \(\stackrel{.}{Q} = A(T_1 − T_2)\).
+Show that the efficiency of the air conditioner is \(η_{cool} = {T_2 \over T_1-T_2}\)."/>
 
-<meta name="keywords" content="efficiency,reverse,carnot,cycle,engine.refrigerator,solution,physics,tesco,barcode,matt,evans,mtdevans" />
-
-<link rel="canonical" href="../reverse-carnot-cycle-efficiency.1.html" />
-<!-- /all in one seo pack -->
-<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #FFFFFF; }
-</style>
-<style type="text/css" id="syntaxhighlighteranchor"></style>
-
-            <script type="text/javascript">//<![CDATA[
-            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-33092385-2']);
-					_gaq.push(['_trackPageLoadTime']);
-            _gaq.push(['_trackPageview']);
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-            //]]></script>
-			</head>
-
-<body class="page page-id-356 page-child parent-pageid-223 page-template-default custom-background single-author singular two-column right-sidebar">
-<div id="page" class="hfeed">
-	<header id="branding" role="banner">
-	    <div id="hdfltcont">
-			  <hgroup>
-				  <h1 id="site-title"><span><a href="../../../index.html" title="Matt Evans" rel="home">Matt Evans</a></span></h1>
-				  <h2 id="site-description">(( Physics, Security, Web ))</h2>
-			  </hgroup>
-			  <nav id="access" role="navigation">
-				  <h3 class="assistive-text">Main menu</h3>
-				  				  <div class="skip-link"><a class="assistive-text" href="../reverse-carnot-cycle-efficiency.1.html#content" title="Skip to primary content">Skip to primary content</a></div>
-				  <div class="skip-link"><a class="assistive-text" href="../reverse-carnot-cycle-efficiency.1.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-				  				  <div class="menu"><ul><li ><a href="../../../index.html">Home</a></li><li class="page_item page-item-106 page_item_has_children current_page_ancestor"><a href="../../index.html">Projects</a><ul class='children'><li class="page_item page-item-223 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html" title="Matt Evans | Solutions to Some Common Physics Problems">Physics Problems</a><ul class='children'><li class="page_item page-item-323"><a href="../polymer-bundle-2-d-microcanonical-approach.1.html" title="2-Dimensional Polymer Bundle (Microcanonical) | Matt Evans">2-D Polymer Bundle (Microcanonical Approach)</a></li><li class="page_item page-item-286"><a href="../absorption-of-molecules-onto-a-surface.1.html">Adsorption of Molecules onto a Surface</a></li><li class="page_item page-item-226"><a href="../deriving-stirlings-formula.1.html" title="Matt Evans | Physics Problems | Deriving Stirling's Formula">Deriving Stirling&#8217;s Formula</a></li><li class="page_item page-item-373"><a href="../diatomic-molecule-as-rigid-rotor/index.html">Diatomic Molecule as Rigid Rotor</a></li><li class="page_item page-item-345"><a href="../diesel-cycle-efficiency.1.html" title="Diesel Cycle Efficiency | Matt Evans">Diesel Cycle Efficiency</a></li><li class="page_item page-item-280"><a href="../exchange-of-particles-between-subsystems.1.html">Exchange of Particles Between Subsystems</a></li><li class="page_item page-item-500"><a href="../fixed-target-vs-collider-experiments-with-discussion/index.html">Fixed Target vs Collider Experiments (with discussion)</a></li><li class="page_item page-item-525"><a href="../interactions-of-charged-particles-with-matter/index.html">Interactions of Charged Particles with Matter</a></li><li class="page_item page-item-490"><a href="../mandelstam-variables-with-identical-particles/index.html">Mandelstam Variables with Identical Particles</a></li><li class="page_item page-item-288"><a href="../maxwell-relations.1.html">Maxwell Relations</a></li><li class="page_item page-item-319"><a href="../mixture-of-two-ideal-gases-microcanonical-approach.1.html" title="Mixture of Two Ideal Gases (Microcanonical) | Matt Evans">Mixture of Two Ideal Gases</a></li><li class="page_item page-item-228"><a href="../particle-in-a-one-dimensional-box.1.html" title="Matt Evans | Physics Problems | Particle in 1-D Box">Particle in a one-dimensional box</a></li><li class="page_item page-item-230"><a href="../random-walk-of-two-drunks.1.html" title="Matt Evans | Physics Problems | Random Walk of Two Drunks">Random Walk of Two Drunks</a></li><li class="page_item page-item-356 current_page_item"><a href="../reverse-carnot-cycle-efficiency.1.html" title="Matt Evans | Efficiency of the Reverse Carnot Cycle">Reverse Carnot Cycle Efficiency</a></li><li class="page_item page-item-233"><a href="../system-of-n-harmonic-oscillators.1.html" title="Microcanonical System N Harmonic Oscillators | Matt Evans">System of N Harmonic Oscillators</a></li></ul></li><li class="page_item page-item-149"><a href="../../barcode.1.html" title="Tesco Discount Barcodes, Cracked.">Tesco Discount Barcodes, Cracked</a></li><li class="page_item page-item-122"><a href="../../zappysearch/index.html" title="ZappySearch, a Firefox Plugin">ZappySearch</a></li></ul></li><li class="page_item page-item-104 page_item_has_children"><a href="../../../about/index.html">About</a><ul class='children'><li class="page_item page-item-384"><a href="../../../about/privacy-policy.1.html">Privacy Policy</a></li></ul></li><li class="page_item page-item-205"><a href="../../../contact/index.html" title="Matt Evans | Contact">Contact</a></li></ul></div>
-			  </nav><!-- #access -->
-			  <br style="clear:both;">
-			</div>
-
-	</header><!-- #branding -->
+    <meta property="og:title" content="Reverse Carnot Cycle Efficiency" />
+<meta property="og:description" content="An air conditioning device is working on a reverse Carnot cycle between the inside of a room at temperature \(T_2\) and the outside at temperature \(T_1\) &gt; \(T_2\) with a monatomic ideal gas as the working medium. The air conditioner consumes the electrical power P. Heat leaks into the house according to the law \(\stackrel{.}{Q} = A(T_1 − T_2)\).
+Show that the efficiency of the air conditioner is \(η_{cool} = {T_2 \over T_1-T_2}\)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/projects/physics-problems/reverse-carnot-cycle-efficiency/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-02-11T14:18:16+00:00" />
+<meta property="article:modified_time" content="2023-02-11T14:18:16+00:00" />
 
 
-	<div id="main">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<div id="primary" class="loner">
-		<ul id="breadcrumbul"><li id="breadcrumb_navigation_widget-2" class="widget crumbs"><h2 class="widgettitle"></h2>
-
-<ul><li><a href="../../../index.html" title="Home">Home</a><span>-></span> </li><li class="page_item lvl1"><a href="../../index.html" title="Projects">Projects</a><span>-></span></li><li class="page_item lvl2"><a href="../index.html" title="Physics Problems">Physics Problems</a><span>-></span></li><li class="page_item lvl3 current_page_item"><a href="../reverse-carnot-cycle-efficiency.1.html" title="Reverse Carnot Cycle Efficiency">Reverse Carnot Cycle Efficiency</a></li>
-</ul></li>
-</ul>			<div id="content" role="main">
-
-				
-					
-	<article id="post-356" class="post-356 page type-page status-publish hentry">
-		<header class="entry-header">
-						<h1 class="entry-title"><a href="../reverse-carnot-cycle-efficiency.1.html" title="Permalink to Reverse Carnot Cycle Efficiency" rel="bookmark">Reverse Carnot Cycle Efficiency</a></h1>
-			
-			
-					</header><!-- .entry-header -->
-
-				<div class="entry-content">
-			<h3>Efficiency of the Reverse Carnot Cycle</h3>
-<p>An air conditioning device is working on a reverse Carnot cycle between the inside of a room at temperature T<sub>2</sub> and the outside at temperature T<sub>1</sub> &gt; T<sub>2</sub> with a monatomic ideal gas as the working medium. The air conditioner consumes the electrical power P. Heat leaks into the house according to the law \(\stackrel{.}{Q} = A(T_1 − T_2)\).</p>
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Reverse Carnot Cycle Efficiency</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 11, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics-problems/">physics-problems</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>An air conditioning device is working on a reverse Carnot cycle between the inside of a room at temperature \(T_2\) and the outside at temperature \(T_1\) &gt; \(T_2\) with a monatomic ideal gas as the working medium. The air conditioner consumes the electrical power P. Heat leaks into the house according to the law \(\stackrel{.}{Q} = A(T_1 − T_2)\).</p>
 <ol>
 <li>Show that the efficiency of the air conditioner is \(η_{cool} = {T_2 \over T_1-T_2}\).</li>
-<li>Express the inside temperature T<sub>2</sub> in terms of T<sub>1</sub>, A, and P.</li>
+<li>Express the inside temperature \(T_2\) in terms of \(T_1\), A, and P.</li>
 </ol>
-<h3>Solution</h3>
-<h4>Efficiency</h4>
-<p>In the reverse Carnot cycle, work is done to extract heat from one system and expel it into another via four processes, two isothermal and two <abbr title="I.e. constant entropy">isentropic</abbr>.<br />
-<div id="attachment_365" style="width: 310px" class="wp-caption alignright"><a href="../../.././wp-content/uploads/2013/01/PV-TS-Reverse-Carnot66dpi.png" ><img src="../../.././wp-content/uploads/2013/01/PV-TS-Reverse-Carnot66dpi-300x118.png" alt="Reverse Carnot Cycle Diagram" title="Reverse Carnot Cycle Diagram" width="300" height="118" class="size-medium wp-image-365" /></a><p class="wp-caption-text">Figure 1. Reverse Carnot Engine<sup><a href="../reverse-carnot-cycle-efficiency.1.html#footnote_0_356" id="identifier_0_356" class="footnote-link footnote-identifier-link" title="http://www.mechlook.com/reversed-carnot-cycle/" >1</a></sup></p></div></p>
-<p>In process \(1 \rightarrow 2\), the gas is isentropically compressed, and there is no heat flow into or out of the refrigerator.</p>
-<p>In process \(2 \rightarrow 3\), heat is expelled into the sink (e.g. outside air) isothermally (T<sub>2</sub>=T<sub>3</sub>). The amount of heat ejected per unit mass of gas is \(Q_C=T_2(S_2-S_3)\).</p>
-<p>In process \(3 \rightarrow 4\), the gas is isentropically expanded. The pressure and temperature decrease to P<sub>4</sub>, T<sub>4</sub>. Heat transfer at this stage is zero.</p>
-<p>In process \(4 \rightarrow 1\), the gas expands isothermally (T<sub>4</sub>=T<sub>1</sub>), extracting heat from the source (e.g. room). This is where the cooling takes place. The heat extracted from the source per unit mass of gas is \(Q_H=T_1(S_1-S_4)=T_1(S_2-S_3)\).</p>
-<p>The work done during the process is simply \(W=Q_H-Q_C=(T_1-T_2)(S_2-S_3)\).</p>
+<h2 id="solution">Solution</h2>
+<p><strong>1. Efficiency</strong></p>
+<p>In the reverse Carnot cycle, work is done to extract heat from one system and expel it into another via four processes, two isothermal and two isentropic (constant entropy).</p>
+<figure><img src="/stuff/PV-TS-Reverse-Carnot66dpi.png"
+         alt="Reverse Carnot Engine. Source (now dead)."/><figcaption>
+            <p>Reverse Carnot Engine. <a href="http://www.mechlook.com/reversed-carnot-cycle/">Source</a> (now dead).</p>
+        </figcaption>
+</figure>
+
+<ul>
+<li>In process \(1 \rightarrow 2\), the gas is isentropically compressed, and there is no heat flow into or out of the refrigerator.</li>
+<li>In process \(2 \rightarrow 3\), heat is expelled into the sink (e.g. outside air) isothermally (\(T_2\)=\(T_3\)). The amount of heat ejected per unit mass of gas is \(Q_C=T_2(S_2-S_3)\).</li>
+<li>In process \(3 \rightarrow 4\), the gas is isentropically expanded. The pressure and temperature decrease to \(P_4\), \(T_4\). Heat transfer at this stage is zero.</li>
+<li>In process \(4 \rightarrow 1\), the gas expands isothermally (\(T_4\)=\(T_1\)), extracting heat from the source (e.g. room).</li>
+</ul>
+<p>This is where the cooling takes place. The heat extracted from the source per unit mass of gas is \[Q_H=T_1(S_1-S_4)=T_1(S_2-S_3).\]</p>
+<p>The work done during the process is simply \[W=Q_H-Q_C=(T_1-T_2)(S_2-S_3).\]</p>
 <p>The efficiency of the reverse Carnot cycle is the heat removed from the cold reservoir / the amount of work input: \(\eta_{cool}=\frac{Q_C}{W}\), so \[\eta_{cool}={T_2 \over T_1-T_2}\;\blacksquare \]</p>
-<h4>Express T<sub>2</sub> in terms of T<sub>1</sub>, A, and P</h4>
-<p>Re-arranging \(\stackrel{.}{Q} = A(T_1 − T_2)\) we obtain \[T_2=T_1-{\stackrel{.}{Q} \over A}\]</p>
-<p>In equilibrium, the heat flow in \(\stackrel{.}{Q}\) must equal the power consumed \(P\) times the efficiency \(\eta\)<sup><a href="../reverse-carnot-cycle-efficiency.1.html#footnote_1_356" id="identifier_1_356" class="footnote-link footnote-identifier-link" title="Update (26/01/13): Sorry about the typo of the dropped &eta; before; I&rsquo;m sure you spotted it.">2</a></sup>:</p>
-<p>\begin{eqnarray}<br />
-T_2&#038;=&#038;T_1 &#8211; {P \eta \over A} \nonumber \\<br />
-&#038;=&#038;T_1 &#8211; {P T_2 \over A(T_1-T_2)} \nonumber<br />
+<p><strong>2. Express \(T_2\) in terms of \(T_1\), A, and P</strong></p>
+<p>Re-arranging \(\stackrel{.}{Q}\;\,=A(T_1 − T_2)\), we obtain \[T_2=T_1-{\stackrel{.}{Q} \over A}\]
+In equilibrium, the heat flow in \(\stackrel{.}{Q}\) must equal the power consumed \(P\) times the efficiency \(\eta\):<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>\begin{eqnarray}
+T_2&amp;=&amp;T_1 – {P \eta \over A} \nonumber \\
+&amp;=&amp;T_1 – {P T_2 \over A(T_1-T_2)} \nonumber
 \end{eqnarray}</p>
 <p>This leads to a quadratic formula whose solution (taking the positive root) is:</p>
 <p>\[T_2 = 2T_1+{P \over 2A}\bigg[\sqrt{{4 T_1 A \over P} + 1} - 1 \bigg]\;\blacksquare\]</p>
-<ol class="footnotes"><li id="footnote_0_356" class="footnote">http://www.mechlook.com/reversed-carnot-cycle/ [<a href="../reverse-carnot-cycle-efficiency.1.html#identifier_0_356" class="footnote-link footnote-back-link">&#8617;</a>]</li><li id="footnote_1_356" class="footnote">Update (26/01/13): Sorry about the typo of the dropped η before; I&#8217;m sure you spotted it. [<a href="../reverse-carnot-cycle-efficiency.1.html#identifier_1_356" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>					</div><!-- .entry-content -->
-		
-		<footer class="entry-meta">
-						
-			
-					</footer><!-- #entry-meta -->
-	</article><!-- #post-356 -->
-
-						<div id="comments">
-	
-	
-	
-			
-</div><!-- #comments -->
-
-				
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-
-		<div id="secondary" class="widget-area" role="complementary">
-			<aside id="search-2" class="widget widget_search">	<form method="get" id="searchform" action="../../../index.html">
-		<label for="s" class="assistive-text">Search</label>
-		<input type="text" class="field" name="s" id="s" placeholder="Search" />
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
-	</form>
-</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">About Me</h3>			<div class="textwidget"><p>Hello and welcome! I'm Matt Evans, a Physics student at the University of Manchester with an unhealthy interest in technology, software, security, and the web.</p>
-<p>I don't hang out here <em>too</em> much at the moment, but <a href="../../index.html" title="A list of the projects I'm currently involved with">any projects</a> I'm working on are kept up to date - both Physics- and web-related.</p>
+<!-- raw HTML omitted -->
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Update (26/01/13): Sorry about the typo of the dropped η before; I’m sure you spotted it.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
 </div>
-		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
-	<li class="cat-item cat-item-17"><a href="../../../category/general/index.html" title="Posts which don&#039;t fit into any other category">General</a>
-</li>
-	<li class="cat-item cat-item-21"><a href="../../../category/physics/index.html" title="View all posts filed under Physics">Physics</a>
-</li>
-	<li class="cat-item cat-item-28"><a href="../../../category/security/index.html" title="View all posts filed under Security">Security</a>
-</li>
-	<li class="cat-item cat-item-11"><a href="../../../category/technology/index.html" title="My thoughts on and experience in the world of technology.">Technology</a>
-</li>
-	<li class="cat-item cat-item-22"><a href="../../../category/web/index.html" title="View all posts filed under Web">Web</a>
-</li>
-		</ul>
-</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='../../../tag/about-me/index.html' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>About Me</a>
-<a href='../../../tag/cakephp/index.html' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>CakePHP</a>
-<a href='../../../tag/javascript/index.html' class='tag-link-27' title='3 topics' style='font-size: 15.636363636364pt;'>JavaScript</a>
-<a href='../../../tag/particle-physics/index.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>particle physics</a>
-<a href='../../../tag/passwords/index.html' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>passwords</a>
-<a href='../../../tag/physics/index.html' class='tag-link-21' title='6 topics' style='font-size: 22pt;'>Physics</a>
-<a href='../../../tag/search/index.html' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>search</a>
-<a href='../../../tag/security-2/index.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>security</a>
-<a href='../../../tag/solved-problems/index.html' class='tag-link-16' title='2 topics' style='font-size: 12.581818181818pt;'>solved problems</a>
-<a href='../../../tag/tutorial/index.html' class='tag-link-24' title='2 topics' style='font-size: 12.581818181818pt;'>Tutorial</a>
-<a href='../../../tag/virtualbox/index.html' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>VirtualBox</a>
-<a href='../../../tag/virtualization/index.html' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>Virtualization</a>
-<a href='../../../tag/web-development/index.html' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Web Development</a>
-<a href='../../../tag/welcome/index.html' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>welcome</a>
-<a href='../../../tag/wordpress/index.html' class='tag-link-8' title='2 topics' style='font-size: 12.581818181818pt;'>Wordpress</a></div>
-</aside>		</div><!-- #secondary .widget-area -->
 
-	</div><!-- #main -->
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
 
-	<footer id="colophon" role="contentinfo">
-
-			
-
-      <div id="copyrightinfo">
-        &copy; Copyright Matt Evans 2014 - <a href="../../../about/privacy-policy.1.html" title="How I protect you and your data.">Privacy</a>
-      </div>
-		  <div id="social_icons">
-		    <a href="https://www.facebook.com/mtdevans" title="Find me on Facebook" class="fb"></a>
-		    <a href="https://twitter.com/mtdevans" title="Follow me on Twitter" class="tt"></a>
-		    <a href="https://plus.google.com/105749333960895048875/?rel=author" title="Circle me on Plus" class="plus"></a>
-		    <a href="https://www.linkedin.com/mtdevans" title="Connect with me on LinkedIn" class="li"></a>
-		  </div>
-			<div id="site-generator">
-								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
-			</div>
-			<br class="clear">
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});</script>
-
-<script type='text/javascript' src='../../.././wp-includes/js/comment-reply.min.js@ver=3.9.13'></script>
-
-</body>
+    </main>
+  </body>
 </html>
-
-<!-- Dynamic page generated in 0.080 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-07-26 03:02:41 -->
-
-<!-- Compression = gzip -->
-<!-- super cache -->

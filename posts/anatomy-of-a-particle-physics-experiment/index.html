@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-uk">
+  <head>
+    <title>Anatomy of a Particle Physics Experiment // Matt Evans</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.aaed4da8694f0a49afef557734c8c9109faf4d15ec9b6870ed067abca0fd4fce.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Anatomy of a Particle Physics Experiment"/>
+<meta name="twitter:description" content="Recently I returned from a particle physics experiment at the Paul Scherrer Institut, a nuclear research lab in Switzerland. I was one of ten students from the University of Heidelberg and ETH, Zürich who had two weeks of (nearly) free reign to carry out an experiment on the PSI’s proton beam line. To put into perspective how crazy that is, ordinarily the going rate for such a privilege is €10,000s per day!
+Our goal was to measure a mysterious number called the “Panofsky ratio”. The ratio is named after Wolfgang Panofsky, first to attempt to measure it, and corresponds is the relative likelihood of two events involving particles called protons and pions occurring. It is important, because historically its value strongly contradicted the expectation of theoretical physicists."/>
+
+    <meta property="og:title" content="Anatomy of a Particle Physics Experiment" />
+<meta property="og:description" content="Recently I returned from a particle physics experiment at the Paul Scherrer Institut, a nuclear research lab in Switzerland. I was one of ten students from the University of Heidelberg and ETH, Zürich who had two weeks of (nearly) free reign to carry out an experiment on the PSI’s proton beam line. To put into perspective how crazy that is, ordinarily the going rate for such a privilege is €10,000s per day!
+Our goal was to measure a mysterious number called the “Panofsky ratio”. The ratio is named after Wolfgang Panofsky, first to attempt to measure it, and corresponds is the relative likelihood of two events involving particles called protons and pions occurring. It is important, because historically its value strongly contradicted the expectation of theoretical physicists." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mtdevans.com/posts/anatomy-of-a-particle-physics-experiment/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2014-02-19T08:04:56+00:00" />
+<meta property="article:modified_time" content="2014-02-19T08:04:56+00:00" />
+
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'],['\\[', '\\]']],
+          processEscapes: false,
+        },
+        tex: {
+          tags: 'ams'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.min.js" integrity="sha512-rt6EnxNkuTTgQX2397gLDTao/kZrmdNM4ZO7n89nX6KqOauwSQTGOq3shcd/oGyUc0czxMKBvj+gML8dxX4hAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mtdevans.com"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Matt Evans</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/projects/main">Projects</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>An interesting blog about interesting things.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Anatomy of a Particle Physics Experiment</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 19, 2014
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          9 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://mtdevans.com/tags/physics/">physics</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Recently I returned from a particle physics experiment at the Paul Scherrer Institut, a nuclear research lab in Switzerland. I was one of ten students from the University of Heidelberg and ETH, Zürich who had two weeks of (nearly) free reign to carry out an experiment on the PSI’s proton beam line. To put into perspective how crazy that is, ordinarily the going rate for such a privilege is €10,000s per <em>day</em>!</p>
+<p>Our goal was to measure a mysterious number called the “Panofsky ratio”. The ratio is named after Wolfgang Panofsky, first to attempt to measure it, and corresponds is the relative likelihood of two events involving particles called protons and pions occurring. It is important, because historically its value strongly contradicted the expectation of theoretical physicists.</p>
+<p>The two processes occur by means of two different forces—one by the <a href="https://en.wikipedia.org/wiki/Weak_interaction">weak interaction</a> and the other by <a href="https://en.wikipedia.org/wiki/Quantum_electrodynamics">quantum electrodynamics</a>—and so the ratio was expected to be somewhere near the ratio of strengths of these interactions, give or take a few corrections, which happens to be around 30 (\(\gamma\)s represent photons):</p>
+<p>\begin{equation}
+\text{Panofsky Ratio } P = \frac{R(p\pi\rightarrow n^* \rightarrow \gamma \gamma)}{R(p \pi \rightarrow n \gamma)} \label{eq:pr}
+\end{equation}</p>
+<p>However, when Panofsky measured the ratio, he got a value of around 0.8. Notwithstanding the fact that this is actually wrong, it’s far enough enough from 30 to prove there is more going on than was expected. Panofsky’s measurement is off by about half from the true value of 1.546±0.009;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> initially we scoffed that such an eminent scientist could get a measurement so wrong. Well, having all but completed the analysis, how my view has changed! This is <em>not</em> an easy measurement to get right.</p>
+<figure><img src="/img/eeee-run167675-evt876658967-3d.jpeg"
+         alt="Spot the Higgs! A Higgs candidate event from LHC."/><figcaption>
+            <p>Higgs candidate event from LHC. All of the tracks are particles emanating out from the collision point. The tracks are curved because, usefully, charged particles (such as electrons and protons) are deflect according to their mass and charge when they pass through a magnetic field. The red and blue blocks show how much energy was deposited in the calorimeter at that point. There are perhaps seven or eight independent events here, but only one is a Higgs event. Taken from <a href="http://cds.cern.ch/record/1406073?ln=en">CERN</a>.</p>
+        </figcaption>
+</figure>
+
+<h2 id="particle-physics-the-basic-principle">Particle Physics: The Basic Principle</h2>
+<p>In line with almost all particle physics experiments, the measurement of the ratio was essentially a counting experiment. You essentially fire particles at a target, be that a stationary target as here, or an opposite-travelling beam as with the LHC, and try to detect the off-coming particles so you can reconstruct what processes happened.</p>
+<p>With reporting on the news about the discovery of the Higgs boson, anyone could be forgiven for thinking, well, if you fire the right projectile at the right target, and watch and wait, eventually you’ll find what you’re looking for.</p>
+<p>Of course, nothing is ever quite so simple. Take the LHC. On the right is what an LHC Higgs boson event really looks like. In reality, reconstructed events like this are primarily for show – the actual analysis of these things is all done by specialized software (and hardware?) – indeed, it was one of my responsibilities to co-write this software for our group.</p>
+<p>Actually, the real challenge, not just in ours, but in all particle physics experiments, comes from the fact that <strong>interesting events hardly ever occur</strong>–it’s rather like searching for a silver needle amidst a stack of silvery grey ones. It’s a stack of needles because, as a necessary artefact of the triggering mechanism described below, most of the events really look very similar; only careful offline analysis can sift out the silver.</p>
+<figure><img src="/img/needles.jpeg"
+         alt="Search for a Silver Needle in a Grey Needle-Stack" width="350"/><figcaption>
+            <p>Detecting interesting events is rather like searching for a silver needle in a massive stack of silvery-grey ones.</p>
+        </figcaption>
+</figure>
+
+<p>The other main difficulty in the Panofsky ratio measurement is that all of the detectable particles are <strong>electrically neutral</strong>, not charged, particles. Neutral particles are harder to detect, track, and measure accurately than are charged particles. To measure charged particles, you just stick them in a magnetic field and measure the curvature of their paths; they can literally be observed with the naked eye (as seen in <a href="https://en.wikipedia.org/wiki/Cloud_chamber">cloud chambers</a>). Neutral particles, however, just pass right through, invisible.</p>
+<p>To measure neutral particles, all you can do is hope they will get stuck in your detector and dump all their energy there, that way you can read their energy off; although with more advanced tracking systems, you can actually reconstruct their trajectories and velocities to identify them more precisely. Our set-up was much more modest, but we knew exactly which particles to expect at exactly which energies, so particle identification was already done in the energy measurement.</p>
+<h2 id="data-acquisition">Data Acquisition</h2>
+<p>In order to record the data from the experiment, some kind of data acquisition system is needed. For larger experiments, there can be literally millions of read-out channels, all of which must be accessed and their data read off and stored for each interesting event. Because of the extremely high rate of background events (thousands per second in this case), it is neither technologically possible nor desirable to record all of this data.</p>
+<p>For example, we had access to seven 8-bit ADCs (Analogue-to-Digital Converter) which ran at 200MHz to read off data–that’s a data throughput rate in the region of 1½ GB/s! Clearly even <em>we</em> had to whittle this down somehow, but for larger experiments this aspect of the experiment is <em>critical</em>. The usual trick is to employ a <strong>triggering</strong> mechanism to wake the electronics up when something interesting (might have) happened.</p>
+<figure><img src="/img/setuph.jpeg"
+         alt="Setup for Panofsky Ratio Measurement"/><figcaption>
+            <p>Experimental set-up. The black paddles are the scintillators used to notify the electronics when a particle has passed through them. You can also see the lead and plastic shielding for the calorimeters (hidden under black cloth) poking into the picture on the right, to reduce the background stream of particles directly from the beam pipe or interactions with the metal frame etc. The target is suspended in the plastic bag at the centre of the set-up.</p>
+        </figcaption>
+</figure>
+
+<p>To actually implement a triggering mechanism, we made use of <strong>scintillators</strong>, the long black paddles covered in tape. Scintillators work by giving out a signal when a particle passes through; if two or more are properly aligned in time, this allows the use of simple electronics to detect co-incident signals etc. which can tell you immediately something about how interesting the event is, and therefore whether you want to store and analyze it.</p>
+<h2 id="how-are-particles8217-energies-measured">How Are particles’ energies measured?</h2>
+<p>The actual energy measurement, the most important part of the whole endeavour, comes from the <strong>calorimeters</strong>. We used two different calorimeter types, one of BGO (bismuth germanate) and the other NaI (sodium iodide).<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Calorimeters measure energy by attempting to stop the particle which is entering, and sending signals about the electric charge inside to the electronics and data acquisition system. The signals are taken over a specific time interval, which creates an event trace showing how the voltage changed over a few nanoseconds. The area under the signal trace is related to how much energy the incident particle had, hopefully linearly.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>I’ll upload an example event trace if I can get my hands on one.</p>
+<h2 id="the-panofsky-ratio">The Panofsky Ratio</h2>
+<p>Ultimately, we were seeking a spectrum looking something along the lines of the spectrum on the left. The spectrum is a histogram of the area under the signal traces from the calorimeters. From the calorimeters, we obtained energy histograms such as on the right:</p>
+<figure><img src="/img/ideal.png"
+         alt="Ideal Spectrum" width="350"/><figcaption>
+            <p>The ideal spectrum. The form of this spectrum is the goal, although such sharp peaks would obviously be smeared into Gaussian peaks etc. The Panofsky ratio is obtained by taking the ratio of events in the oblong to those in the peak. The x-axis scale is arbitrary.</p>
+        </figcaption>
+</figure>
+
+<figure><img src="/img/CH2_11runs_nofsky_nocuts.png"
+         alt="Energy histogram of calorimeter output" width="450"/><figcaption>
+            <p>This is the raw output of the large blue sodium iodide calorimeter. It doesn’t particularly resemble the ideal plot. Hopefully it will look a bit better after background subtraction.</p>
+        </figcaption>
+</figure>
+
+<p>Obviously, there is an absolute <em>ton</em> of background which needs to be dealt with!</p>
+<h2 id="removing-background-and-recovering-the-ideal-plot">Removing Background and Recovering the Ideal Plot</h2>
+<p>Ideally, since we are looking for interactions of pions with protons, we should have used a liquid hydrogen target – essentially a pure sea of protons. Alas, for unspecified safety reasons, we had to pass on the rocket fuel and use something more practical; plastic was the tool of choice.</p>
+<p>Plastic, though, being essentially solidified hydrocarbon, contains a lot of carbon which <em>also</em> interacts with our incoming pions. This is what makes the raw spectrum look so terrible. So in order to see how just the hydrogen acted with the pions, we had to know the effect of carbon by taking runs with a pure carbon target, and statistically subtracting the result from the plot.</p>
+<p>Even after a perfect statistical subtraction, of course, the resulting graph should not show such a sharp peak as in the left/top plot, but rather a <a href="https://en.wikipedia.org/wiki/Gaussian_distribution">Gaussian spread</a> around the peak, as is the case with practically any experimental measurement.</p>
+<h2 id="and-the-results">And the Results?</h2>
+<p>Update: After much graft, the analysis genii of the group deduced a ratio of ~1. Not half bad, in my opinion! Progress is yet to be made on the precise value, and statistical and systematic uncertainties.</p>
+<p><del>And we really don’t know! Apparently this statistical subtraction stuff is hard to do well, and when you don’t have as awesome statistics as you’d like (we didn’t start taking data 24/7 till we had only <em>three days left</em>!), you can’t really afford to get it wrong.</del></p>
+<p><del>The fact is it’s so hard, we still haven’t managed to do it convincingly enough to draw any conclusions. I’ll update when we’ve made some progress.</del></p>
+<h2 id="possible-improvements">Possible Improvements</h2>
+<p>There are a few aspects to our specific experiment which could be improved if it were repeated. Unfortunately, pure liquid hydrogen will forever remain out of bounds, but this was made worse in our case because the absorber, the series of white blocks directly in front of the beam outlet designed to taper the beam momentum (you can kind of see it in the experimental set-up) was also made of plastic. This poisoned our measurement in a way difficult to quantify.</p>
+<p>In addition, we struggled initially with incredibly low rates (roughly 0.3Hz) and it wasn’t until the final few days that we changed our set-up in desperation, introducing the never-before-used big blue calorimeter, and had 24/7 data-taking (and very sleepy people). This is why you really should <em>make sure everything’s set up and functioning before the end of the first week</em>! You’ll thank yourself.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>No group in over four years managed to measure the Panofsky ratio with any success. But even with the odds against us from the beginning, we had a decent stab at this experiment, and the outcome was far better than expected!</p>
+<p>Whilst our stated aim was to obtain the measurement, in reality the aim was to experience being a part of a spontaneous physics collaboration, learning hands-on what life as an experimental particle physicist is like. It was a fantastic opportunity and I’m personally glad I took it. If you as a student are offered a similar opportunity, don’t let it pass you by.</p>
+<figure><img src="/img/psi_collaboration3-e1383496521417.jpeg"
+         alt="PSI-13 Collaboration"/><figcaption>
+            <p>PSI-13 Collaboration. Photo credit: <a href="http://www.flickr.com/photos/nberger/">Niklaus Berger</a>.</p>
+        </figcaption>
+</figure>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See <a href="http://www.sciencedirect.com/science/article/pii/037026937790449X">a recent measurement</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>The reason for two kinds is they respond differently, and it was hoped the NaI could detect the neutrons better than the BGO calorimeters.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>This is the response with an ideal calorimeter. Ours actually weren’t linear across a wide range of energies, only within a certain range large enough to be acceptable.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

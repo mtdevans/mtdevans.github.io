@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Evans</title>
+    <link>https://mtdevans.com/</link>
+    <description>Recent content on Matt Evans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 24 Jun 2023 20:27:37 +0100</lastBuildDate><atom:link href="https://mtdevans.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Future of Cybersecurity Consulting</title>
+      <link>https://mtdevans.com/posts/the-future-of-cybersecurity-consululting/</link>
+      <pubDate>Sat, 24 Jun 2023 20:27:37 +0100</pubDate>
+      
+      <guid>https://mtdevans.com/posts/the-future-of-cybersecurity-consululting/</guid>
+      <description>I don&amp;rsquo;t know what the future of cybersecurity consulting will be, but I have some thoughts.
+Back in the late 1900s, cybersecurity wasn&amp;rsquo;t really a thing. To the extent that it was, it was owned by a very small group who were both techy and a little naughty in the νοῦς, as they say. A typical cybersecurity engagement involved rocking up to a customer, him giving you a cable, and you going at it for love and money, getting pwns every which way before lunch.</description>
+    </item>
+    
+    <item>
+      <title>What Will AI Not Consume? Strategically Placing Oneself For the New Era.</title>
+      <link>https://mtdevans.com/posts/what-will-ai-not-consume/</link>
+      <pubDate>Fri, 23 Jun 2023 20:19:20 +0100</pubDate>
+      
+      <guid>https://mtdevans.com/posts/what-will-ai-not-consume/</guid>
+      <description>AI is not just a buzzword. To be sure, as to the words, it is nonsense: there is no intelligence, but mere pattern matching and extrapolation. Well, call that intelligence if you will; I won&amp;rsquo;t. But the effects of AI cannot be downplayed and should not be ignored by anyone in a technical discipline not wanting to be left behind.
+If you work in any of these industries, I believe it&amp;rsquo;s very possible that AI is coming to eat your lunch:</description>
+    </item>
+    
+    <item>
+      <title>Reverse Carnot Cycle Efficiency</title>
+      <link>https://mtdevans.com/projects/physics-problems/reverse-carnot-cycle-efficiency/</link>
+      <pubDate>Sat, 11 Feb 2023 14:18:16 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/reverse-carnot-cycle-efficiency/</guid>
+      <description>An air conditioning device is working on a reverse Carnot cycle between the inside of a room at temperature \(T_2\) and the outside at temperature \(T_1\) &amp;gt; \(T_2\) with a monatomic ideal gas as the working medium. The air conditioner consumes the electrical power P. Heat leaks into the house according to the law \(\stackrel{.}{Q} = A(T_1 − T_2)\).
+Show that the efficiency of the air conditioner is \(η_{cool} = {T_2 \over T_1-T_2}\).</description>
+    </item>
+    
+    <item>
+      <title>Diesel Cycle Efficiency</title>
+      <link>https://mtdevans.com/projects/physics-problems/diesel-cycle-efficiency/</link>
+      <pubDate>Sat, 11 Feb 2023 13:57:17 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/diesel-cycle-efficiency/</guid>
+      <description>The Diesel cycle is the thermodynamic cycle which approximates the pressure and volume of the combustion chamber in a Diesel engine. In the Diesel cycle, the working medium in the combustion chamber is
+compressed adiabatically from \(V_1\), \(p_1\) to \(V_2\) &amp;lt; \(V_1\), \(p_2\) &amp;gt; \(p_1\), expanded isobarically at \(p_2\) from \(V_2\) to \(V_3\) &amp;gt; \(V_2\), expanded adiabatically from \(V_3\), \(p_2\) to \(V_1\) and \(p_4\) &amp;gt; \(p_1\), cooled isochorically at \(V_1\) from \(p_4\) to the initial pressure \(p_1\).</description>
+    </item>
+    
+    <item>
+      <title>The Maxwell Relations</title>
+      <link>https://mtdevans.com/projects/physics-problems/maxwell-relations/</link>
+      <pubDate>Sat, 11 Feb 2023 13:48:40 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/maxwell-relations/</guid>
+      <description>Many thanks to Bart Andrews for this contribution!
+Question Show that a relation of the kind \(f(x, y, z) = 0\) between the three quantities x, y, and z implies the relation \[\left(\frac{\partial x}{\partial y}\right)_z \left(\frac{\partial y}{\partial z}\right)_x \left(\frac{\partial z}{\partial x}\right)_y = -1\] between the partial derivatives.
+The grandcanonical partition sum \(Z_G\) is a function of the three parameters β, V, and μ. All other state variables are derived from \(Z_G\) and its partial derivatives.</description>
+    </item>
+    
+    <item>
+      <title>Adsorption of Molecules Onto a Surface</title>
+      <link>https://mtdevans.com/projects/physics-problems/adsorption-of-molecules-onto-a-surface/</link>
+      <pubDate>Sat, 11 Feb 2023 13:34:45 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/adsorption-of-molecules-onto-a-surface/</guid>
+      <description>Many thanks to Bart Andrews for this contribution!
+Question Consider a gas in contact with a solid surface. The molecules of the gas can adsorb to specific sites on the surface. These sites are sparsely enough distributed over the surface that they do not directly interact. In total, there are N adsorption sites, and each can adsorb n = 0, n = 1, or n = 2 molecules. When an adsorption site is unoccupied, the energy of the site is zero.</description>
+    </item>
+    
+    <item>
+      <title>Exchange of Particles Between Subsystems</title>
+      <link>https://mtdevans.com/projects/physics-problems/exchange-of-particles-between-subsystems/</link>
+      <pubDate>Sat, 11 Feb 2023 13:06:36 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/exchange-of-particles-between-subsystems/</guid>
+      <description>Many thanks to Bart Andrews for this contribution!
+Question Consider two systems \(I\) and \(II\) in contact with a common heat bath with temperature T and suppose that a mechanism exists which allows both systems to exchange particles. The probability that the composed system \(I + II\) is in a state for which system \(I\) has an energy between \(E_I\) and \(E_I+dE_I\) and a particle number \(N_I\), while \(II\) has an energy between \(E_{II}\) and \(E_{II} + dE_{II}\) with a particle number \(N_{II}\) is given by</description>
+    </item>
+    
+    <item>
+      <title>Diatomic Molecule as Rigid Rotor</title>
+      <link>https://mtdevans.com/projects/physics-problems/diatomic-molecule-as-rigid-rotor/</link>
+      <pubDate>Sat, 11 Feb 2023 12:57:56 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/diatomic-molecule-as-rigid-rotor/</guid>
+      <description>Download as PDF.
+Question Consider a molecule, such as Carbon Monoxide, which consists of two different atoms, one Carbon and one Oxygen, separated by a distance \(d\). Such a molecule can exist in quantum states of different orbital angular momentum. Each state has the energy \[ \epsilon_l={\hbar^2 \over 2I}l(l+1)\] where \(I=\mu d^2\) is the moment of inertia of the molecule about an axis through its centre of mass and \(\mu\) is the reduced mass defined by \(\frac 1\mu=\frac{1}{m_1} + \frac{1}{m_2}\).</description>
+    </item>
+    
+    <item>
+      <title>2-D Polymer Bundle (Microcanonical Approach)</title>
+      <link>https://mtdevans.com/projects/physics-problems/polymer-bundle-2-d-microcanonical-approach/</link>
+      <pubDate>Sat, 11 Feb 2023 12:50:34 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/polymer-bundle-2-d-microcanonical-approach/</guid>
+      <description>This is a microcanonical ensemble approach to a simple model of a two dimensional polymer bundle. The professor of the course I took does a lot of research in the area of polymer physics and so set a few problems pertaining to them. They aren’t easily found in textbooks or online either (this website notwithstanding) but are nevertheless quite interesting in themselves. We also approached this same problem from the canonical ensemble which I’ll upload soon.</description>
+    </item>
+    
+    <item>
+      <title>Mixture of Two Ideal Gases</title>
+      <link>https://mtdevans.com/projects/physics-problems/mixture-of-two-ideal-gases/</link>
+      <pubDate>Sat, 11 Feb 2023 12:37:59 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/mixture-of-two-ideal-gases/</guid>
+      <description>This is a microcanonical approach to the problem of the mixture of two ideal gases. It involves a somewhat tricky integral over the surface of an N-dimensional hypersphere, and as far as I can tell is an example beloved of professors for exam questions. It might be a good one to become familiar with if you’re taking a statistical physics course.
+Question Enclosed in a box of volume V are \(N_1\) molecules of species 1 with mass \(m_1\) and \(N_2\) molecules of species 2 with mass \(m_2\).</description>
+    </item>
+    
+    <item>
+      <title>System of N Harmonic Oscillators</title>
+      <link>https://mtdevans.com/projects/physics-problems/system-of-n-harmonic-oscillators/</link>
+      <pubDate>Sat, 11 Feb 2023 12:25:16 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/system-of-n-harmonic-oscillators/</guid>
+      <description>The reason this general problem is so useful in a wide range of areas of physics is in physics we love to deal with harmonic approximations of systems. The point of solving the problem of N harmonic oscillators in this way is that they approximate (actually, correspond to) the behaviour of the particles in an ideal gas.
+Here, we work out the number of states (microstates) available to the system, the entropy of the system, and derive the energy of the corresponding ideal gas as a function of temperature.</description>
+    </item>
+    
+    <item>
+      <title>Random Walk of Two Drunks</title>
+      <link>https://mtdevans.com/projects/physics-problems/random-walk-of-two-drunks/</link>
+      <pubDate>Sat, 11 Feb 2023 11:53:41 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/random-walk-of-two-drunks/</guid>
+      <description>The one-dimensional random walk is a key foundational concept in statistical physics which crops up in a variety of situations, albeit normally with far more dimensions. This light-hearted question which is circling amongst statistical physics professors serves as a good introduction to random walks.
+If you were set this as a homework and were struggling with where to go, about now would be a good time to pat yourself on the back.</description>
+    </item>
+    
+    <item>
+      <title>Particle in a One Dimensional Box</title>
+      <link>https://mtdevans.com/projects/physics-problems/particle-in-a-one-dimensional-box/</link>
+      <pubDate>Sat, 11 Feb 2023 11:47:16 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/particle-in-a-one-dimensional-box/</guid>
+      <description>Question A point particle of mass \(m\) moves in the region \(0 \le x \le l\) and is reflected elastically at the walls at \(x=0\) and \(x=l\).
+Calculate the volume \(\Gamma_0(E)\) of the classical phase space with an energy smaller than \(E\). Assume that a particle initially has an energy \(E_0\). Demonstrate that the phase-space volume \(\Gamma_0(E)\) of this particle remains constant when the wall at \(x=l\) is moved slowly (adiabatic invariance).</description>
+    </item>
+    
+    <item>
+      <title>Deriving Stirlings Formula</title>
+      <link>https://mtdevans.com/projects/physics-problems/deriving-stirlings-formula/</link>
+      <pubDate>Sat, 11 Feb 2023 11:24:20 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/deriving-stirlings-formula/</guid>
+      <description>## A little background to Stirling’s Formula ##
+Stirling’s approximation is vital to a manageable formulation of statistical physics and thermodynamics. It vastly simplifies calculations involving logarithms of factorials where the factorial is huge. In statistical physics, we are typically discussing systems of \(10^{22}\) particles. With numbers of such orders of magnitude, this approximation is certainly valid, and also proves incredibly useful.
+There are numerous ways of deriving the result, and further refinements to the approximation to be found elsewhere.</description>
+    </item>
+    
+    <item>
+      <title>Mandelstam Variables With Identical Particles</title>
+      <link>https://mtdevans.com/projects/physics-problems/mandelstam-variables-with-identical-particles/</link>
+      <pubDate>Sat, 11 Feb 2023 00:55:26 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/mandelstam-variables-with-identical-particles/</guid>
+      <description>For the elastic scattering of identical particles, \(A + A → A + A\), what are the Mandelstam variables?
+## Solution ##
+The Mandelstam variables are defined, for a process \(1 + 2 → 3 + 4\), as
+\begin{eqnarray} s &amp;amp;=&amp;amp; (p_1 + p_2)^2 \nonumber \\ t &amp;amp;=&amp;amp; (p_1 − p_3)^2 \nonumber \\ u &amp;amp;=&amp;amp; (p_1 − p_4)^2 \nonumber \end{eqnarray}
+where the \(p\)s are the four-momenta.
+Relevant elastic collision for the \(t\) and \(u\) Mandelstam variables.</description>
+    </item>
+    
+    <item>
+      <title>Fixed Target vs Collider Experiments With Discussion</title>
+      <link>https://mtdevans.com/projects/physics-problems/fixed-target-vs-collider-experiments-with-discussion/</link>
+      <pubDate>Fri, 10 Feb 2023 23:39:45 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/fixed-target-vs-collider-experiments-with-discussion/</guid>
+      <description>A proton beam with a momentum of \(p=100\text{GeV}\) hits a fixed Hydrogen target (discussion beneath).
+a) What is the centre of mass energy \(\sqrt{s}\) for this interaction? In such an interaction, obviously only a fraction of the momentum carried by the incoming proton will be accessible to the interaction.
+Let’s calculate the momentum 4-vectors (in natural units) for this interaction:
+\begin{eqnarray} p_1^\mu &amp;amp;=&amp;amp; (E_p, \vec {p}_1) \\ p_2^\mu &amp;amp;=&amp;amp; (m_p, \vec 0) \end{eqnarray}</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://mtdevans.com/projects/main/</link>
+      <pubDate>Fri, 10 Feb 2023 23:04:56 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/main/</guid>
+      <description>Physics Notes, Solutions, and Related Stuff
+I’ve written up a couple of foundational and a few somewhat challenging physics problems and notes which I think the web could benefit from. I’ve started with a few from Statistical Physics, and will be adding more in time that&amp;rsquo;s all, folks!.
+Note: I recently migrated these pages from my old site, so be sure to look out for typos.</description>
+    </item>
+    
+    <item>
+      <title>Physics Notes, Solutions, and Related Stuff</title>
+      <link>https://mtdevans.com/projects/physics-problems/main/</link>
+      <pubDate>Fri, 10 Feb 2023 23:04:36 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/projects/physics-problems/main/</guid>
+      <description>I’ve typed up solutions to a few physics problems often set in BSc. courses, some because they aren’t easily found on the web and I’d like to make the lives of fellow labourers that little bit easier, others are here because by writing them up I was drilling them into my head.
+I’ve tried to make them as clear as possible in my write-ups from my often less-than-legible notes, but if you have any problems/comments or spot any errors, do get in contact.</description>
+    </item>
+    
+    <item>
+      <title>Anatomy of a Particle Physics Experiment</title>
+      <link>https://mtdevans.com/posts/anatomy-of-a-particle-physics-experiment/</link>
+      <pubDate>Wed, 19 Feb 2014 08:04:56 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/anatomy-of-a-particle-physics-experiment/</guid>
+      <description>&lt;p&gt;Recently I returned from a particle physics experiment at the Paul Scherrer Institut, a nuclear research lab in Switzerland. I was one of ten students from the University of Heidelberg and ETH, Zürich who had two weeks of (nearly) free reign to carry out an experiment on the PSI’s proton beam line. To put into perspective how crazy that is, ordinarily the going rate for such a privilege is €10,000s per &lt;em&gt;day&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;Our goal was to measure a mysterious number called the “Panofsky ratio”. The ratio is named after Wolfgang Panofsky, first to attempt to measure it, and corresponds is the relative likelihood of two events involving particles called protons and pions occurring. It is important, because historically its value strongly contradicted the expectation of theoretical physicists.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Solving the Schrödinger Equation with Numerov&#39;s Algorithm</title>
+      <link>https://mtdevans.com/posts/solving-the-schrodinger-equation-with-numerovs-algorithm/</link>
+      <pubDate>Wed, 10 Jul 2013 13:05:23 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/solving-the-schrodinger-equation-with-numerovs-algorithm/</guid>
+      <description>&lt;p&gt;The Schrödinger equation describes the energy and time-evolution of a particle or system of particles, and is one of the fundamental building blocks of modern physics. In it’s general form, the (time-independent) Schrödinger equation for a one-dimensional harmonic oscillator reads thus:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\label{eq:sch}
+\frac{-\hbar^2}{2m} \frac{\partial^2}{\partial z^2}\psi(z) + \frac{mz^2}{2} \psi(z) = E\psi(z)
+\end{equation}&lt;/p&gt;
+&lt;p&gt;There are relatively few situations in which the Schrödinger equation can be solved analytically, and numerical methods and approximations are one way around that analytical limitation. To demonstrate how this is possible and how a numerical solution works, what better way than to solve a system which &lt;strong&gt;can&lt;/strong&gt; be solved analytically and comparing the results.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fourth Order Runge Kutta Algorithm in Javascript With Demo</title>
+      <link>https://mtdevans.com/posts/fourth-order-runge-kutta-algorithm-in-javascript-with-demo/</link>
+      <pubDate>Thu, 02 May 2013 18:08:37 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/fourth-order-runge-kutta-algorithm-in-javascript-with-demo/</guid>
+      <description>&lt;p&gt;The general Runge-Kutta algorithm is one of a few algorithms for solving first order ordinary differential equations. Below is a specific implementation for solving &lt;a href=&#34;https://en.wikipedia.org/wiki/Equation_of_motion&#34;&gt;equations of motion&lt;/a&gt; and other second order ordinary differential equations (ODEs) for Physics simulations, amongst other things.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Physics Bungee Rope Cursor Trailer</title>
+      <link>https://mtdevans.com/posts/physics-bungee-rope-cursor-trailer/</link>
+      <pubDate>Sat, 13 Apr 2013 17:44:01 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/physics-bungee-rope-cursor-trailer/</guid>
+      <description>I’m getting ready for starting a course in computational physics, and so, ignoring the fact I’m meant to be revising for an exam this Monday, I thought I’d prepare for the more exciting of the two. I’ve always wanted to code this little physics model ever since I saw it on one of those JavaScript snippet websites back when dial-up was fast and people downloaded mp3s one at a time. Those were the days.</description>
+    </item>
+    
+    <item>
+      <title>Physics Problems and Related Stuff</title>
+      <link>https://mtdevans.com/posts/physics-problems-and-related-stuff/</link>
+      <pubDate>Sun, 02 Dec 2012 13:54:00 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/posts/physics-problems-and-related-stuff/</guid>
+      <description>Just a quick one here.
+It’s pushing a month since I last checked in, and not for want of desire. I’ve not been entirely negligent though: I’ve been busy putting together a few typed up solutions to both foundational and pretty challenging/rare problems in statistical physics.
+My motivation is two-fold: a) to get extremely familiar with the material, what with exams just around the corner and b) for a few of the problems, the solutions are nearly impossible to do or to find help online for if you can’t do them.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mtdevans.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mtdevans.com/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
