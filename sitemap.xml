@@ -3,19 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mtdevans.com/</loc>
-    <lastmod>2023-06-24T20:27:37+01:00</lastmod>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://mtdevans.com/tags/english-language/</loc>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
+  </url><url>
+    <loc>https://mtdevans.com/posts/faux-so/</loc>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
+  </url><url>
+    <loc>https://mtdevans.com/posts/</loc>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
+  </url><url>
+    <loc>https://mtdevans.com/tags/rants/</loc>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
+  </url><url>
+    <loc>https://mtdevans.com/tags/</loc>
+    <lastmod>2023-06-27T20:16:21+01:00</lastmod>
   </url><url>
     <loc>https://mtdevans.com/tags/cybersecurity/</loc>
     <lastmod>2023-06-24T20:27:37+01:00</lastmod>
   </url><url>
-    <loc>https://mtdevans.com/posts/</loc>
-    <lastmod>2023-06-24T20:27:37+01:00</lastmod>
-  </url><url>
-    <loc>https://mtdevans.com/tags/</loc>
-    <lastmod>2023-06-24T20:27:37+01:00</lastmod>
-  </url><url>
-    <loc>https://mtdevans.com/posts/the-future-of-cybersecurity-consululting/</loc>
+    <loc>https://mtdevans.com/posts/the-future-of-cybersecurity-consulting/</loc>
     <lastmod>2023-06-24T20:27:37+01:00</lastmod>
   </url><url>
     <loc>https://mtdevans.com/tags/artificial-intelligence/</loc>
